@@ -2,24 +2,24 @@
 set -eo pipefail
 
 # ─────────────────────────────────────────────
-#  Tokyo Day Dark palette
-#  bg:      #1a1b26   fg:      #c0caf5
-#  cyan:    #7dcfff   blue:    #7aa2f7
-#  purple:  #bb9af7   green:   #9ece6a
-#  yellow:  #e0af68   orange:  #ff9e64
-#  red:     #f7768e   comment: #565f89
+#  Tokyo Day palette
+#  pane:    #D6D8DF   fg:      #343B59   (terminal pane; window bg #E6E7ED)
+#  blue:    #2959AA   green:   #33635C
+#  yellow:  #8F5E15   red:     #8C4351
+#  ink:     #2C324B   muted:   #707280
+#  comment: #888B94
 # ─────────────────────────────────────────────
 
-# Tokyo Day Dark - using $'...' so escape bytes are stored at assignment time
+# Tokyo Day - using $'...' so escape bytes are stored at assignment time
 # and work correctly with both echo -e and printf "%s"
-CYAN=$'\033[38;2;125;207;255m'    # #7dcfff  - section headers
-BLUE=$'\033[38;2;122;162;247m'    # #7aa2f7  - info / commands
-PURPLE=$'\033[38;2;187;154;247m'  # #bb9af7  - highlights
-GREEN=$'\033[38;2;158;206;106m'   # #9ece6a  - success
-YELLOW=$'\033[38;2;224;175;104m'  # #e0af68  - warnings
-ORANGE=$'\033[38;2;255;158;100m'  # #ff9e64  - skipped
-RED=$'\033[38;2;247;118;142m'     # #f7768e  - errors
-DIM=$'\033[38;2;86;95;137m'       # #565f89  - comments / dim text
+CYAN=$'\033[38;2;44;50;75m'      # #2C324B  - section headers (ink)
+BLUE=$'\033[38;2;41;89;170m'     # #2959AA  - info / commands
+PURPLE=$'\033[38;2;123;67;186m'  # #7B43BA  - highlights
+GREEN=$'\033[38;2;51;99;92m'     # #33635C  - success
+YELLOW=$'\033[38;2;143;94;21m'   # #8F5E15  - warnings
+ORANGE=$'\033[38;2;112;114;128m' # #707280  - skipped (muted)
+RED=$'\033[38;2;140;67;81m'      # #8C4351  - errors
+DIM=$'\033[38;2;136;139;148m'    # #888B94  - comments / dim text
 BOLD=$'\033[1m'
 RESET=$'\033[0m'
 
@@ -125,9 +125,9 @@ update_snap() {
 
 # ── Logo ───────────────────────────────────────────────────────────────────────
 
-# COSMIC logo accent colors - global scope so $'...' escapes work correctly
-TEAL=$'\033[38;2;78;205;196m'   # #4ecdc4  COSMIC teal
-ORG=$'\033[38;2;255;107;53m'    # #ff6b35  COSMIC orange
+# Logo rule colours (ink, blue) - global scope so $'...' escapes work correctly
+TEAL=$'\033[38;2;44;50;75m'     # #2C324B  ink, logo rule left half
+ORG=$'\033[38;2;41;89;170m'     # #2959AA  blue, logo rule right half
 
 # Banner rows, ANSI Shadow figlet font. All 46 columns wide; keep them that way
 # or the gradient below will drift out of alignment with the letterforms.
@@ -140,24 +140,17 @@ LOGO_ROWS=(
     ' ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝   ╚═╝'
 )
 
-# Per-column colours for the banner: a blue → green ramp interpolated in Oklab
-# rather than in sRGB. A naive RGB blend between #7aa2f7 and #9ece6a dips through
-# a desaturated grey at the midpoint - which lands right under "De", the most
-# visible part of the word. Oklab is perceptually uniform, so the ramp stays
-# bright the whole way across and passes through cyan-teal instead.
-#
-# Precomputed at author time: doing cube roots in bash for 276 characters on
-# every run would be silly. To retune, regenerate rather than hand-editing.
-# One entry per column, 46 total.
+# Per-column colours for the banner: ink → blue, left to right.
+# Ink like the fastfetch logo; blue stays for small text. One entry per column, 46 total.
 LOGO_GRAD=(
-    "122;162;247" "122;163;244" "123;165;242" "123;166;239" "124;167;237" "125;168;234"
-    "125;170;231" "126;171;229" "126;172;226" "127;173;223" "128;174;221" "128;175;218"
-    "129;177;215" "130;178;213" "130;179;210" "131;180;207" "132;181;204" "132;182;201"
-    "133;183;199" "134;184;196" "135;185;193" "136;186;190" "136;187;187" "137;188;184"
-    "138;189;181" "139;190;178" "140;191;175" "141;191;172" "141;192;169" "142;193;166"
-    "143;194;163" "144;195;159" "145;196;156" "146;197;153" "147;197;149" "148;198;146"
-    "149;199;142" "150;200;139" "151;201;135" "152;201;131" "153;202;127" "154;203;123"
-    "155;204;119" "156;205;115" "157;205;111" "158;206;106"
+    "52;59;89" "52;60;91" "52;60;93" "51;61;94" "51;62;96" "51;62;98"
+    "51;63;100" "50;64;102" "50;64;103" "50;65;105" "50;66;107" "49;66;109"
+    "49;67;111" "49;68;112" "49;68;114" "48;69;116" "48;70;118" "48;70;120"
+    "48;71;121" "47;72;123" "47;72;125" "47;73;127" "47;74;129" "46;74;130"
+    "46;75;132" "46;76;134" "46;76;136" "45;77;138" "45;78;139" "45;78;141"
+    "45;79;143" "44;80;145" "44;80;147" "44;81;148" "44;82;150" "43;82;152"
+    "43;83;154" "43;84;156" "43;84;157" "42;85;159" "42;86;161" "42;86;163"
+    "42;87;165" "41;88;166" "41;88;168" "41;89;170"
 )
 
 # Draw the banner one character at a time, colouring by column index so the
