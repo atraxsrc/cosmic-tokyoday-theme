@@ -36,7 +36,7 @@ firefox/
 
 Two layers, use one or both:
 
-1. **Theme (colours):** [Cosmic Tokyo Day](https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyoday-theme/) colours the toolbar, tabs, URL bar,
+1. **Theme (colours):** [Cosmic Tokyo Day](https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyo-day-theme/) colours the toolbar, tabs, URL bar,
    menus, sidebar and new tab page. This is the main look.
 2. **Stylesheets (optional):** `chrome/` adds rounded corners, blue menu
    hover, blue accents and a blank new-tab grid on top of the theme. They
@@ -66,7 +66,7 @@ line clear 3:1.
 | `#B1B3C1` | Sidebar border                              |
 | `#969AAA` | Menu border                                 |
 | `#343B59` | Body text                                   |
-| `#707280` | Inactive tab text                           |
+| `#565C75` | Inactive tab text                           |
 | `#33635C` | Icons                                       |
 | `#2959AA` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
 
