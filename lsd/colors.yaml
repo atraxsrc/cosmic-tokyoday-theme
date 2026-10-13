@@ -1,38 +1,41 @@
-user: 149
-group: 111
+# 256-colour codes nearest the Tokyo Day palette on the pane (lsd 1.0.0 does
+# not accept #hex here): 25 blue, 24 cyan, 23 green, 94 yellow, 95 red,
+# 97 purple, 243 muted, 245 comment, 238 ink.
+user: 25
+group: 243
 permission:
-  read: 111
-  write: 179
-  exec: 210
-  exec-sticky: 210
-  no-access: 60
-  octal: 141
-  acl: 141
-  context: 141
+  read: 243
+  write: 94
+  exec: 95
+  exec-sticky: 95
+  no-access: 245
+  octal: 238
+  acl: 238
+  context: 238
 date:
-  hour-old: 149
-  day-old: 111
-  older: 141
+  hour-old: 25
+  day-old: 23
+  older: 245
 size:
-  none: 60
-  small: 149
-  medium: 179
-  large: 210
+  none: 245
+  small: 23
+  medium: 94
+  large: 95
 inode:
-  valid: 149
-  invalid: 210
+  valid: 23
+  invalid: 95
 links:
-  valid: 179
-  invalid: 210
-tree-edge: 60
+  valid: 238
+  invalid: 95
+tree-edge: 245
 git-status:
-  default: 60
-  unmodified: 60
-  ignored: 60
-  new-in-index: 111
-  new-in-workdir: 111
-  typechange: 179
-  deleted: 210
-  renamed: 111
-  modified: 179
-  conflicted: 210
+  default: 245
+  unmodified: 245
+  ignored: 245
+  new-in-index: 23
+  new-in-workdir: 23
+  typechange: 94
+  deleted: 95
+  renamed: 238
+  modified: 25
+  conflicted: 95
