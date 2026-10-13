@@ -1,10 +1,14 @@
 /* ==========================================================================
-   Cosmic Night - userChrome.css  v4  (minimal + scoped)
+   Tokyo Day - userChrome.css
+   Ported from the DarkGold baseline, recoloured for the COSMIC Tokyo Day
+   palette (light)
 
-   v3 set --panel-* / --arrowpanel-* on :root with !important. Those variables
-   are used across the whole chrome, not just panels, so that leaked into the
-   toolbar and blanked the URL bar. Everything here is scoped to the element
-   it affects. No :root overrides.
+   Colors from Tokyo Day:
+     bg #E6E7ED  panel #DEE0E6  menu text #343B59 (ink)  ink #343B59
+     blue #2959AA  border #B1B3C1  deep blue #234C90 (button hover)
+     hover #C8D0DF  pressed #BAC5DA  (blue tinted into the panel)
+
+   No :root overrides - variables stay on the popup they belong to.
 
    Install:
      1. about:config -> toolkit.legacyUserProfileCustomizations.stylesheets = true
@@ -17,18 +21,18 @@
 #urlbar-background,
 #searchbar {
   border-radius: 10px !important;
-  border-color: #a8ec61 !important;   /* lime in both states */
+  border-color: #2959AA !important;
 }
 
 #urlbar[focused="true"] > #urlbar-background {
-  box-shadow: 0 0 10px -3px #a8ec61 !important;
+  box-shadow: 0 0 10px -3px #2959AA !important;
 }
 
 /* ---------- rounded corners: tabs ---------- */
 .tabbrowser-tab .tab-background {
-  border-radius: 10px !important;      /* all four corners */
+  border-radius: 10px !important;
   margin-inline: 2px !important;
-  margin-block: 3px !important;        /* lets the bottom corners show */
+  margin-block: 3px !important;
 }
 
 /* ---------- rounded corners: urlbar dropdown ---------- */
@@ -44,27 +48,62 @@ toolbarbutton .toolbarbutton-icon {
 
 /* ==========================================================================
    MENU COLORS - scoped to the popups only.
-   Setting these on the popup element (not :root) keeps them out of the
-   toolbar's cascade.
    ========================================================================== */
 
 #appMenu-popup,
 #widget-overflow,
 #customizationui-widget-multiview,
 menupopup {
-  --panel-background: #171b23 !important;
-  --panel-color: #c3d0f5 !important;
-  --panel-border-color: #3a3946 !important;
+  --panel-background: #DEE0E6 !important;
+  --panel-color: #343B59 !important;
+  --panel-border-color: #B1B3C1 !important;
   --panel-border-radius: 10px !important;
-  --panel-separator-color: #3a3946 !important;
-  --panel-item-hover-bgcolor: rgba(121, 163, 247, 0.16) !important;
-  --panel-item-active-bgcolor: rgba(121, 163, 247, 0.26) !important;
+  --panel-separator-color: #B1B3C1 !important;
+  --panel-item-hover-bgcolor: #C8D0DF !important;
+  --panel-item-active-bgcolor: #BAC5DA !important;
 
-  --arrowpanel-background: #171b23 !important;
-  --arrowpanel-color: #c3d0f5 !important;
-  --arrowpanel-border-color: #3a3946 !important;
-  --arrowpanel-dimmed: rgba(121, 163, 247, 0.16) !important;
-  --arrowpanel-dimmed-further: rgba(121, 163, 247, 0.26) !important;
+  --arrowpanel-background: #DEE0E6 !important;
+  --arrowpanel-color: #343B59 !important;
+  --arrowpanel-border-color: #B1B3C1 !important;
+  --arrowpanel-dimmed: #C8D0DF !important;
+  --arrowpanel-dimmed-further: #BAC5DA !important;
+
+  /* newer Firefox panel vars (v140+) */
+  --panel-background-color: #DEE0E6 !important;
+  --panel-text-color: #343B59 !important;
+}
+
+/* Firefox's own accent (Sign in button, toggles, focus rings) inside the
+   popups. Without this it follows the desktop accent, not the theme. */
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+#protections-popup,
+#identity-popup,
+menupopup {
+  --color-accent-primary: #2959AA !important;
+  --color-accent-primary-hover: #234C90 !important;
+  --color-accent-primary-active: #234C90 !important;
+  --button-background-color-primary: #2959AA !important;
+  --button-background-color-primary-hover: #234C90 !important;
+  --button-background-color-primary-active: #234C90 !important;
+  --button-text-color-primary: #E6E7ED !important;
+  --focus-outline-color: #2959AA !important;
+}
+
+/* Drop GTK/native menuitem chrome so background-color actually paints.
+   Without this, Cosmic/GTK hover is a 1-stop gray wash. */
+menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup menuseparator,
+#contentAreaContextMenu,
+#contentAreaContextMenu menuitem,
+#contentAreaContextMenu menu,
+#context-navigation,
+#context-navigation menuitem {
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 /* rounded menu rows */
@@ -76,38 +115,63 @@ menupopup menu {
   margin-inline: 4px !important;
 }
 
-/* hover: subtle blue wash + outline */
+/* hover / keyboard-active row
+   Rust-tinted fill + ink text + slim blue rail so the pointer
+   position is obvious without leaving Tokyo Day. */
 #appMenu-popup .subviewbutton:not([disabled]):hover,
 #widget-overflow .subviewbutton:not([disabled]):hover,
 menupopup menuitem:not([disabled]):hover,
-menupopup menu:not([disabled]):hover {
-  background-color: rgba(121, 163, 247, 0.16) !important;
-  box-shadow: inset 0 0 0 1px #79a3f7 !important;
+menupopup menu:not([disabled]):hover,
+menupopup menuitem[_moz-menuactive="true"]:not([disabled]),
+menupopup menu[_moz-menuactive="true"]:not([disabled]),
+#contentAreaContextMenu menuitem:not([disabled]):hover,
+#contentAreaContextMenu menu:not([disabled]):hover,
+#contentAreaContextMenu menuitem[_moz-menuactive="true"]:not([disabled]),
+#contentAreaContextMenu menu[_moz-menuactive="true"]:not([disabled]),
+#context-navigation menuitem:not([disabled]):hover,
+#context-navigation menuitem[_moz-menuactive="true"]:not([disabled]) {
+  background-color: #C8D0DF !important;
+  color: #343B59 !important;
+  box-shadow: inset 3px 0 0 #2959AA !important;
+  outline: none !important;
+}
+
+/* access-key underline (the S in Save, A in As) - ink on hover, blue underline */
+menupopup menuitem[_moz-menuactive="true"] .menu-text,
+menupopup menu[_moz-menuactive="true"] .menu-text,
+menupopup menuitem:hover .menu-text,
+menupopup menu:hover .menu-text {
+  color: #343B59 !important;
+  text-decoration-color: #2959AA !important;
 }
 
 /* separators */
 #appMenu-popup toolbarseparator,
 menupopup menuseparator {
-  border-top: 1px solid #3a3946 !important;
+  border-top: 1px solid #B1B3C1 !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
-/* ---------- menu borders ----------
-   #appMenu-popup and friends render their shell inside shadow DOM, so a plain
-   `border` on the element does nothing. ::part(content) is the supported hook.
-   Scoped to named popups only. */
-#appMenu-popup::part(content),
-#widget-overflow::part(content),
-#customizationui-widget-multiview::part(content),
-#protections-popup::part(content),
-#identity-popup::part(content) {
-  border: 4px solid #ff00ff !important;   /* DIAGNOSTIC - impossible to miss */
+/* ---------- hamburger / overflow / identity shells ----------
+   Context menus are NOT given an extra element border; native
+   --panel-border-color already draws one. */
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+#protections-popup,
+#identity-popup {
+  border: 1px solid #B1B3C1 !important;
   border-radius: 10px !important;
+  background-color: #DEE0E6 !important;
+  padding: 0 !important;
 }
 
-/* Context menus ARE shadow-based too. Styling the element directly puts a
-   rounded border on the inner box while the outer shell stays square, so both
-   edges show at once. ::part(content) is the shell itself. */
-menupopup::part(content) {
-  border: 1px solid #a8ec61 !important;
+#appMenu-popup panelmultiview,
+#appMenu-popup panelview,
+#appMenu-popup .panel-subview-body,
+#appMenu-multiView,
+#widget-overflow .panel-subview-body {
   border-radius: 10px !important;
+  background-color: #DEE0E6 !important;
 }
