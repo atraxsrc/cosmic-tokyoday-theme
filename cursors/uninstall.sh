@@ -9,7 +9,7 @@
 set -euo pipefail
 
 RICE="TokyoDay"
-VARIANTS=(Blue Purple Green Dark)
+VARIANTS=(Blue Purple Green Ink)
 SYS="/usr/share/icons"
 USR="$HOME/.local/share/icons"
 STAMP="$(date +%Y%m%d-%H%M%S)"
