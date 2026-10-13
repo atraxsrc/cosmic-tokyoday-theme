@@ -49,7 +49,7 @@ calm accent (green here, lime in Tokyo Night, gold in DarkGold), and everything
 "hot" (tab line, pressed button, menu and sidebar selection, loading) takes
 the loud one (blue here, blue in Tokyo Night, coral in DarkGold). Blue `#2959AA`
 reads at 5.5:1 on the frame, so it carries every accent role. One extra key, `toolbar_field_border_focus`, pins the
-focused URL bar ring to rust so it does not fall back to the desktop accent
+focused URL bar ring to blue so it does not fall back to the desktop accent
 when `widget.non-native-theme.use-theme-accent` is on (the Firefox default on
 Linux). Two more, `toolbar_field_highlight` and `toolbar_field_highlight_text`,
 colour selected text in the URL bar the same way, as DarkGold does. Every
