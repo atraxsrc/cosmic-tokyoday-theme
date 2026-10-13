@@ -97,7 +97,7 @@ Containers: primary `#DEE0E6`, secondary `#D6D8DF`. Window hint `#2959AA`.
 ├── assets
 │   ├── cursors/                 # cursor preview
 │   ├── screenshot.png           # README screenshot
-│   └── wallpaper.png            # the stripes on the bare desktop
+│   └── wallpaper.png            # a wallpaper on the bare desktop
 ├── backgrounds/                 # wallpapers, tokyoday-<subject>.png (see Icons and wallpaper)
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
@@ -329,10 +329,11 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers ship in [`backgrounds/`](backgrounds/), named `tokyoday-<subject>.png`.
-For now that is the stripes, plus `tokyoday.gpl`, the GIMP palette the
-illustrated subjects (eagle, samurai, reaper, city, geisha, blueprint, sushi
-switch) are recoloured with; they land as they are rendered.
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `tokyoday-<subject>.png`:
+a car, a city, a city on water and the Hyundai blueprint, recoloured in GIMP
+with `tokyoday.gpl`, the palette file next to them, plus plain stripes. More
+subjects (eagle, samurai, reaper, geisha, sushi switch) land as they are
+rendered.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`.
 
