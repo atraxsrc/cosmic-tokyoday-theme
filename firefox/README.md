@@ -1,40 +1,85 @@
-# Firefox - Cosmic Night
+# Firefox - Tokyo Day
 
-Firefox theme matching the COSMIC rice. Palette sampled directly from the
-wallpaper, [`tokyoday-cosmic-astronaut-black.png`](../backgrounds/tokyoday-cosmic-astronaut-black.png)
-(k-means over the image, then tuned until every text pair clears WCAG AA).
+Firefox chrome matching the COSMIC Tokyo Day rice. Ported from the DarkGold
+baseline (theme recipe and stylesheets), recoloured for lavender grey and blue.
+The light half of [Tokyo Night](https://github.com/atraxsrc/cosmic-tokyonight-theme).
 
 ## Palette
 
-| Hex       | Role                       | Source in the wallpaper |
-|-----------|----------------------------|-------------------------|
-| `#000000` | Frame, new tab             | Space background        |
-| `#171b23` | Panels, active tab, menus  | Shadow tone             |
-| `#0d0f16` | Toolbar                    | Lifted panel            |
-| `#05060a` | URL bar field              | Deepest black           |
-| `#79a3f7` | Borders, icons, selection  | Armor plating           |
-| `#a8ec61` | Focus ring, active tab line| Visor strip             |
-| `#e04c5d` | Loading, attention         | Under-suit red          |
-| `#3a3946` | Separators                 | Mech detail grey        |
-| `#7d8fae` | Muted text                 | Mid shadow              |
-| `#c3d0f5` | Body text                  | -                       |
+Stylesheets:
+
+| Hex       | Role                      |
+|-----------|---------------------------|
+| `#E6E7ED` | Frame, page chrome        |
+| `#DEE0E6` | Panels, menus             |
+| `#C8D0DF` | Menu hover row (blue tinted into the panel) |
+| `#BAC5DA` | Menu pressed row          |
+| `#B1B3C1` | Separators, menu border   |
+| `#2959AA` | Accent, URL bar border, hover rail |
+| `#234C90` | Button hover (deep blue)  |
+| `#33635C` | New tab accent, active    |
+| `#343B59` | Menu text, links and hover text (ink) |
+| `#E6E7ED` | Text on blue              |
 
 ## Structure
 
 ```
 firefox/
-├── theme/            WebExtension theme source
-│   ├── manifest.json     40 colour keys
-│   └── icons/            32 / 48 / 64 / 96 / 128
-├── chrome/           profile stylesheets
-│   ├── userChrome.css    browser UI: rounded corners, menu borders
-│   └── userContent.css   new tab page: accent colour only
-└── install.sh        copies chrome/ into the default profile
+├── theme/            WebExtension theme source (Cosmic Tokyo Day)
+│   ├── manifest.json     DarkGold's 24 colour keys + URL bar ring and selection
+│   └── icons/            32 / 48 / 64 / 96 / 128, blue and green rings on the window colour
+├── chrome/
+│   ├── userChrome.css    browser UI: rounded corners, blue menu hover
+│   └── userContent.css   new tab page: blue accents, blank shortcut tiles
+└── install.sh            copies chrome/ into the default profile
 ```
 
-## Setup
+Two layers, use one or both:
 
-### Stylesheets
+1. **Theme (colours):** [Cosmic Tokyo Day](https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyoday-theme/) colours the toolbar, tabs, URL bar,
+   menus, sidebar and new tab page. This is the main look.
+2. **Stylesheets (optional):** `chrome/` adds rounded corners, blue menu
+   hover, blue accents and a blank new-tab grid on top of the theme. They
+   also work with Firefox's built-in Light theme.
+
+## Theme
+
+Same colour keys and roles as DarkGold's Firefox theme and Tokyo Night: icons take the
+calm accent (green here, lime in Tokyo Night, gold in DarkGold), and everything
+"hot" (tab line, pressed button, menu and sidebar selection, loading) takes
+the loud one (blue here, blue in Tokyo Night, coral in DarkGold). Blue `#2959AA`
+reads at 5.5:1 on the frame, so it carries every accent role. One extra key, `toolbar_field_border_focus`, pins the
+focused URL bar ring to rust so it does not fall back to the desktop accent
+when `widget.non-native-theme.use-theme-accent` is on (the Firefox default on
+Linux). Two more, `toolbar_field_highlight` and `toolbar_field_highlight_text`,
+colour selected text in the URL bar the same way, as DarkGold does. Every
+text colour clears WCAG AA (4.5:1) on its background; icons and the tab
+line clear 3:1.
+
+| Hex       | Where in the theme                          |
+|-----------|---------------------------------------------|
+| `#E6E7ED` | Frame, new tab                              |
+| `#DEE0E6` | Toolbar, menus                              |
+| `#ECEDF2` | URL bar field                               |
+| `#E6E7ED` | Text on blue selections                     |
+| `#C9CBD2` | Button hover                                |
+| `#B1B3C1` | Sidebar border                              |
+| `#969AAA` | Menu border                                 |
+| `#343B59` | Body text                                   |
+| `#707280` | Inactive tab text                           |
+| `#33635C` | Icons                                       |
+| `#2959AA` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
+
+Build the package:
+
+```bash
+cd theme && zip -r -X ../cosmic-tokyoday.zip . -x '.*'
+```
+
+Try it without installing: `about:debugging#/runtime/this-firefox` → **Load
+Temporary Add-on** → pick `theme/manifest.json`. It is gone on restart.
+
+## Stylesheets
 
 ```bash
 ./install.sh
@@ -62,45 +107,23 @@ Manual equivalent:
 3. Copy `chrome/` in
 4. Restart
 
-To undo: delete the two files and restart. The theme still works on its own.
-
-### Theme
-
-Install from AMO: **[Cosmic Night](https://addons.mozilla.org/en-US/firefox/addon/cosmic-night/)**.
-
-To try local changes, build the package:
-
-```bash
-cd theme && zip -r -X ../cosmic-night.zip . -x '.*'
-```
-
-and load it via `about:debugging#/runtime/this-firefox` → Load Temporary
-Add-on (gone on restart).
-
-To release a new version, bump `version` in `theme/manifest.json`, build the
-zip, and upload it on the [Developer Hub](https://addons.mozilla.org/developers/)
-→ Cosmic Night → Upload a New Version → **On this site**. AMO refuses a
-version number it has seen before.
+To undo: delete the two files from the profile's `chrome/` folder and restart.
 
 ## Notes
 
-Things worth knowing before editing the CSS:
-
-- **Never set `--panel-*` or `--arrowpanel-*` on `:root`.** Those variables are
-  read across the whole chrome; overriding them globally leaks into the toolbar
-  and blanks the URL bar. Scope them to the popup elements.
-- **Popup borders need `::part(content)`.** Menus and panels render their shell
-  in shadow DOM - a plain `border` on the element lands on the inner box, so
-  you get two visible edges. This applies to context menus too.
-- **No `@namespace` declaration.** Modern Firefox builds urlbar results and
-  panel rows from HTML; defaulting to the XUL namespace silently stops those
-  selectors from matching.
-- **`userContent.css` sets colour variables only.** Adding `border` or
-  `background` to `.tile` / `.search-inner-wrapper` stacks boxes and breaks
-  the new tab layout.
-- Built against **Firefox 154**. Panel internals move between releases; the
-  Browser Toolbox (`Ctrl+Shift+Alt+I`, after enabling `devtools.chrome.enabled`)
-  shows current element names.
+- **Never set `--panel-*` or `--arrowpanel-*` on `:root`.** Those variables leak
+  into the toolbar and blank the URL bar. They stay on the popup elements.
+- **Context menus do not get an extra element border.** A second stroke made
+  the right-click panel look detached. Hover is a blue-tinted `#C8D0DF` row
+  with a 3px blue rail on the left, not a full ring.
+- **Native menu styling is switched off** (`appearance: none`) on menus and
+  menu rows. Without it the COSMIC/GTK hover paints over the colours above.
+- **`[_moz-menuactive="true"]` is required.** Firefox marks the active
+  context-menu row with that attribute, not only `:hover`.
+- **`userContent.css` is colours plus one hide rule.** It sets accent / focus /
+  link colours and hides shortcut artwork (`opacity: 0`) so the new-tab tiles
+  stay blank. No size or position rules on the tiles.
+- Built against **Firefox 154**.
 
 ## License
 

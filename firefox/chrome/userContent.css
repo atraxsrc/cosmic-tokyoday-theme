@@ -1,13 +1,13 @@
 /* ==========================================================================
-   Cosmic Night - userContent.css  v2  (variables only)
+   Tokyo Day - userContent.css
+   Ported from the DarkGold baseline, recoloured for the COSMIC Tokyo Day
+   palette (light)
 
-   v1 set border / background / border-radius directly on .tile,
-   .top-site-button and .search-inner-wrapper. Those are nested elements, so
-   the borders stacked and the added box model stretched the tiles and
-   overflowed the search bar.
-
-   This version changes COLOR ONLY, through the variables Firefox already
-   uses for its own layout. Nothing here can affect size or position.
+   New tab / home / private pages only:
+     - blue accent and focus, ink links
+     - blue focus ring on shortcut tiles, blue personalize button
+     - shortcut artwork hidden (tiles stay, icons go blank)
+   No size / position changes.
 
    Install:  chrome/userContent.css   (same pref + restart as userChrome.css)
    ========================================================================== */
@@ -17,21 +17,52 @@
                url-prefix("about:privatebrowsing") {
 
   :root {
-    /* the purple accent - this is what you were seeing */
-    --newtab-primary-action-background: #79a3f7 !important;
-    --newtab-primary-action-background-dimmed: rgba(121, 163, 247, 0.25) !important;
+    --newtab-primary-action-background: #2959AA !important;
+    --newtab-primary-action-background-dimmed: rgba(149, 59, 25, 0.25) !important;
 
-    /* focus rings on the search box and tiles */
-    --newtab-focus-border: #79a3f7 !important;
-    --newtab-focus-outline: #79a3f7 !important;
-    --newtab-textbox-focus-color: #79a3f7 !important;
+    --color-accent-primary: #2959AA !important;
+    --color-accent-primary-hover: #234C90 !important;
+    --color-accent-primary-active: #234C90 !important;
 
-    /* generic in-content accent, used for links and controls */
-    --in-content-accent-color: #79a3f7 !important;
-    --in-content-accent-color-active: #a8ec61 !important;
-    --in-content-focus-outline-color: #79a3f7 !important;
+    --newtab-focus-border: #2959AA !important;
+    --newtab-focus-outline: #2959AA !important;
+    --newtab-textbox-focus-color: #2959AA !important;
 
-    --link-color: #79a3f7 !important;
-    --link-color-hover: #a8ec61 !important;
+    --in-content-accent-color: #2959AA !important;
+    --in-content-accent-color-active: #33635C !important;
+    --in-content-focus-outline-color: #2959AA !important;
+
+    --link-color: #2959AA !important;
+    --link-color-hover: #343B59 !important;
+
+    --focus-outline-color: #2959AA !important;
+    --focus-outline: 2px solid #2959AA !important;
+    --newtab-button-focus-border: #2959AA !important;
+    --button-background-color: #2959AA !important;
+    --button-text-color: #E6E7ED !important;
+  }
+
+  .top-site-outer:is(:focus, :focus-visible, .active) .tile,
+  .top-site-outer .top-site-button:focus .tile,
+  .top-site-outer .top-site-button:focus-visible .tile {
+    outline: 2px solid #2959AA !important;
+    border-color: #2959AA !important;
+  }
+
+  .personalize-button {
+    background-color: #2959AA !important;
+    color: #E6E7ED !important;
+  }
+
+  /* Hide shortcut artwork so tiles stay blank */
+  .top-site-icon,
+  .top-site-icon.rich-icon,
+  .top-site-icon.default-icon,
+  .screenshot,
+  .screenshot.active,
+  .letter-fallback {
+    background-image: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
   }
 }
