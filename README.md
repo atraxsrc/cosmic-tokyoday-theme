@@ -2,14 +2,15 @@
 
 # COSMIC · Tokyo Day
 
-Pop!_OS 24.04 on COSMIC in Tokyo Day navy, blue and lime: desktop, terminal,
-shell, editor, Firefox, cursor, wallpapers.
+Pop!_OS 24.04 on COSMIC in Tokyo Night Light lavender grey, ink and blue: desktop,
+terminal, shell, editor, Firefox, cursor, wallpapers. The light half of a pair;
+the dark half is [cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-tokyonight-theme).
 
-![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-48B9C7?style=for-the-badge&logo=popos&logoColor=white)
-![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-ff6b35?style=for-the-badge)
-![Tokyo Day](https://img.shields.io/badge/Theme-Tokyo_Night_Dark-7aa2f7?style=for-the-badge)
-![Firefox](https://img.shields.io/badge/Firefox-Cosmic_Night-a8ec61?style=for-the-badge&logo=firefox-browser&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-9ece6a?style=for-the-badge)
+![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-2959aa?style=for-the-badge&logo=popos&logoColor=white)
+![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-33635c?style=for-the-badge)
+![Tokyo Day](https://img.shields.io/badge/Theme-Tokyo_Day-e6e7ed?style=for-the-badge&labelColor=2959aa)
+![Firefox](https://img.shields.io/badge/Firefox-Cosmic_Tokyo_Day-2959aa?style=for-the-badge&logo=firefox-browser&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-707280?style=for-the-badge)
 
 </div>
 
@@ -18,43 +19,37 @@ shell, editor, Firefox, cursor, wallpapers.
 
 ## Palette
 
-Tokyo Day Dark, the low-contrast navy palette from the
-[VS Code theme](https://github.com/tokyo-night/tokyo-night-vscode-theme) of the
-same name. Contrast is measured on the window background `#1A1B26`.
+Tokyo Night Light from the [Tokyo Night VS Code theme](https://github.com/tokyo-night/tokyo-night-vscode-theme),
+the same project the dark half cites. Body text is navy ink, so no role needed
+re-tinting: everything you read as text is 4.5:1 or better on the window
+background `#E6E7ED`. Muted and comment sit low on purpose, as upstream does.
+The terminal is an opaque pane `#D6D8DF`, a step darker than the desktop,
+where yellow, purple, cyan and the number colour land between 3.9 and 4.4:1.
 
-| Role | Color | Hex | Contrast |
-|------|-------|-----|----------|
-| Background | ![#1a1b26](https://placehold.co/12x12/1a1b26/1a1b26.png) Dark navy | `#1A1B26` | |
-| Containers | ![#24283b](https://placehold.co/12x12/24283b/24283b.png) Storm / Highlight | `#24283B` / `#292E42` | |
-| Text | ![#c0caf5](https://placehold.co/12x12/c0caf5/c0caf5.png) Soft white | `#C0CAF5` | 10.6:1 |
-| Accent | ![#7aa2f7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) Blue | `#7AA2F7` | 6.8:1 |
-| Cyan | ![#7dcfff](https://placehold.co/12x12/7dcfff/7dcfff.png) Sky | `#7DCFFF` | 10.0:1 |
-| Purple | ![#bb9af7](https://placehold.co/12x12/bb9af7/bb9af7.png) Lavender | `#BB9AF7` | 7.4:1 |
-| Success | ![#9ece6a](https://placehold.co/12x12/9ece6a/9ece6a.png) Green | `#9ECE6A` | 9.4:1 |
-| Warning | ![#e0af68](https://placehold.co/12x12/e0af68/e0af68.png) Amber | `#E0AF68` | 8.5:1 |
-| Orange | ![#ff9e64](https://placehold.co/12x12/ff9e64/ff9e64.png) Orange | `#FF9E64` | 8.4:1 |
-| Error | ![#f7768e](https://placehold.co/12x12/f7768e/f7768e.png) Rose | `#F7768E` | 6.5:1 |
-| Muted | ![#737aa2](https://placehold.co/12x12/737aa2/737aa2.png) Dark 5 | `#737AA2` | 4.1:1 |
-| Comment | ![#565f89](https://placehold.co/12x12/565f89/565f89.png) Comment | `#565F89` | 2.8:1 |
+| Role | Hex | On window | On pane |
+|------|-----|-----------|---------|
+| Text, ink | `#343B59` | 8.9 | 7.7 |
+| Accent, blue | `#2959AA` | 5.5 | 4.8 |
+| Success, green | `#33635C` | 5.5 | 4.8 |
+| Warning, yellow | `#8F5E15` | 4.5 | 3.9 |
+| Error, red | `#8C4351` | 5.6 | 4.9 |
+| Purple | `#7B43BA` | 5.1 | 4.4 |
+| Cyan | `#006C86` | 4.9 | 4.2 |
+| String | `#385F0D` | 6.1 | 5.2 |
+| Number | `#965027` | 4.9 | 4.2 |
+| Keyword | `#65359D` | 6.7 | 5.8 |
+| Muted | `#707280` | 3.9 | 3.3 |
+| Comment | `#888B94` | 2.8 | 2.4 |
+| Line numbers | `#9DA0AB` | 2.1 | 1.8 |
 
-Comments sit deliberately low, as in the original theme. Everything you read
-as text is 6.5:1 or better.
+Containers: primary `#DEE0E6`, secondary `#D6D8DF`. Window hint `#2959AA`.
 
-### Cosmic Night (Firefox only)
-
-Firefox gets its own palette, sampled from the astronaut wallpaper with
-k-means and tuned until every text pair clears WCAG AA. It runs darker and
-cooler than the rest of the rice.
-
-| Role | Color | Hex |
-|------|-------|-----|
-| Background | ![#000000](https://placehold.co/12x12/000000/000000.png) True black | `#000000` |
-| Panels | ![#171b23](https://placehold.co/12x12/171b23/171b23.png) Shadow | `#171B23` |
-| Blue | ![#79a3f7](https://placehold.co/12x12/79a3f7/79a3f7.png) Armor | `#79A3F7` |
-| Lime | ![#a8ec61](https://placehold.co/12x12/a8ec61/a8ec61.png) Visor | `#A8EC61` |
-| Red | ![#e04c5d](https://placehold.co/12x12/e04c5d/e04c5d.png) Under-suit | `#E04C5D` |
-| Grey | ![#3a3946](https://placehold.co/12x12/3a3946/3a3946.png) Mech detail | `#3A3946` |
-| Foreground | ![#c3d0f5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) Soft white | `#C3D0F5` |
+| Role | Tokyo Day | Tokyo Night |
+|------|-----------|-------------|
+| Background | `#E6E7ED` | `#1A1B26` |
+| Text | `#343B59` | `#C0CAF5` |
+| Accent | `#2959AA` | `#7AA2F7` |
+| Success | `#33635C` | `#9ECE6A` |
 
 ---
 
@@ -62,40 +57,31 @@ cooler than the rest of the rice.
 
 ```
 .
-├── assets
-│   ├── cursors/                 # cursor previews
-│   ├── screenshot.png           # README screenshot
-│   └── wallpaper.png            # the astronaut on the bare desktop
-├── backgrounds/                 # wallpapers, tokyoday-<subject>.png (see Icons and wallpaper)
 ├── btop
-│   └── TokyoDay.theme         # btop colour theme
+│   └── TokyoDay.theme            # btop colour theme
 ├── cosmic
-│   ├── TokyoDay.ron           # COSMIC Appearance import (Dark)
+│   ├── TokyoDay.ron              # COSMIC Appearance import (Light)
 │   ├── config/                  # baseline settings: fonts, icons, terminal look
 │   └── install.sh
 ├── cosmic-term
-│   └── TokyoDay-term.ron      # COSMIC Terminal colour scheme
+│   └── TokyoDay-term.ron         # COSMIC Terminal colour scheme (Light)
 ├── cursors
-│   ├── Oxygen-TokyoDay-*/      # cursor themes, one per icon colour, patched for COSMIC apps
+│   ├── Oxygen-TokyoDay-*/         # cursor themes, one per icon colour, patched for COSMIC apps
 │   ├── install.sh
 │   ├── uninstall.sh
 │   └── README.md
-├── docs
-│   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── icons
 │   └── install.sh               # Cosmic-TokyoDay icon pack from cosmic-icon-themes
 ├── fastfetch
-│   ├── config.jsonc             # blue / comment-grey fastfetch config
-│   ├── cosmic.txt               # COSMIC logo, coloured by the config
+│   ├── config.jsonc             # ink / blue fastfetch config
+│   ├── cosmic.txt               # COSMIC logo
 │   └── install.sh
-├── firefox                      # Cosmic Night browser theme
-│   ├── theme
-│   │   ├── manifest.json        # WebExtension theme, 40 colour keys
-│   │   └── icons                # 32 / 48 / 64 / 96 / 128
+├── firefox
+│   ├── theme                    # Cosmic Tokyo Day theme add-on (manifest + icons)
 │   ├── chrome
-│   │   ├── userChrome.css       # browser UI: rounded corners, menu borders
-│   │   └── userContent.css      # new tab page accent colour
-│   ├── install.sh               # copies chrome/ into the default profile
+│   │   ├── userChrome.css       # rounded chrome, grey menus, blue hover
+│   │   └── userContent.css      # new tab accents, blank tiles
+│   ├── install.sh
 │   └── README.md
 ├── lsd
 │   ├── config.yaml              # theme: custom
@@ -103,10 +89,18 @@ cooler than the rest of the rice.
 │   └── install.sh
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
-│   └── update_system.sh         # nala + flatpak, Tokyo Day ANSI
+│   ├── update_system.sh         # nala + flatpak, dark ANSI for a light terminal
+│   └── contrast.py              # palette contrast table, feeds the README
 ├── zsh
-│   ├── tokyoday.zsh           # LS_COLORS, highlighting colours, aliases, starship
+│   ├── tokyoday.zsh              # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
+├── assets
+│   ├── cursors/                 # cursor preview
+│   ├── screenshot.png           # README screenshot
+│   └── wallpaper.png            # the stripes on the bare desktop
+├── backgrounds/                 # wallpapers, tokyoday-<subject>.png (see Icons and wallpaper)
+├── docs
+│   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── LICENSE
 └── README.md
 ```
@@ -115,28 +109,33 @@ cooler than the rest of the rice.
 
 ## COSMIC Desktop
 
-Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/TokyoDay.ron`
+This is a **Light** theme, so it goes in COSMIC's Light slot:
 
-The whole palette is Tokyo Day, in the same format as the DarkGold baseline:
-background `#1A1B26`, containers `#24283B` / `#292E42`, navy neutrals from
-`#3B4261` to `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
-`#7AA2F7`, success `#9ECE6A`, warning `#E0AF68`, error `#F7768E`. Text tint
-is pinned to `#C7D1FD`, a touch brighter than Tokyo Day's `#C0CAF5` so it
-stays crisp on the glass.
+Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/TokyoDay.ron`
 
-Frosted glass is on at `frosted: Low` with an opacity table of 0.66 to 0.96,
-tinted with the palette's middle neutral `#545C7E`, the same glass as every
-other rice. It covers windows, panel, applets and system UI (maximized apps
-stay solid), and corners are squared (`radius_*: 2.0`), the same as the
-DarkGold baseline.
-Adjust it on Appearance → Style → Frosted glass after import; those sliders
-survive a theme switch. Export from Appearance if you tweak it so you do not
-lose the changes.
+Accent is blue `#2959AA`; the window hint border is the same blue, matching
+the dark half.
+Use the `+` control if you want a custom swatch.
+
+Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
+0.66 to 0.96, tinted with the palette's middle neutral `#898EA0`, for windows, panel,
+applets and system UI (maximized apps stay solid), and corners are squared
+(`radius_*: 2.0`), the same as the DarkGold baseline. Adjust frosted glass on
+Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
-reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
-`cosmic/TokyoDay.ron`; it carries the tint. Upstream fix proposed in
-[libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450), not merged.
+reset `text_tint` to `#FFFFFF`, which on a light theme makes every label
+unreadable. If your text turns white, re-import `cosmic/TokyoDay.ron`: it
+carries the ink tint and the whole frosted block, so one import restores both.
+Upstream fix proposed in [libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450),
+not merged.
+
+Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Tokyo Night.ron` from
+[cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-tokyonight-theme) into the
+Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
 
@@ -148,7 +147,7 @@ reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
 | Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal NFM` |
 | Icons | Cosmic-TokyoDay-Blue |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
-| Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Tokyo Day |
+| Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), opaque, no header bar, Tokyo Day (light scheme) |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
 Cosmic-TokyoDay icons (see Icons below) and import the terminal scheme first, then:
@@ -166,11 +165,19 @@ It backs up each file it replaces to `*.bak` and COSMIC applies it live.
 The desktop `.ron` does not colour ANSI text.
 
 1. COSMIC Terminal → **View → Color schemes…** (not Settings → Appearance)
-2. Dark tab → **Import** → `cosmic-term/TokyoDay-term.ron`
-3. View → Settings → Appearance → Color scheme (dark) → **Tokyo Day**
+2. **Light** tab → **Import** → `cosmic-term/TokyoDay-term.ron`
+3. View → Settings → Appearance → Color scheme (light) → **Tokyo Day**
 
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
+
+Ink text on an opaque pane `#D6D8DF`, a step darker than the desktop; red for
+errors, green for strings and success, yellow in its own slot, blue for
+commands and directories, cyan for symlinks, purple for magenta. Bright colours
+are deeper, dim colours lighter, so bold and dim still read on a light
+background. On the pane yellow, purple, cyan and the number colour land between
+3.9 and 4.4:1, a little under the 4.5:1 the window background keeps; drop the
+`background` line from the scheme to get the window colour back.
 
 ---
 
@@ -179,20 +186,34 @@ dropdown will look like it did nothing.
 Two layers:
 
 1. **Theme (colours):** install
-   **[Cosmic Night on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-night/)**.
-   This is the main look: a true-black theme whose palette comes from the
-   astronaut wallpaper rather than from Tokyo Day (see the second table
-   under Palette). Blue chrome, a lime focus accent, red for alerts.
-2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, menu
-   borders and the new tab accent on top of the theme:
+   **[cosmic-tokyoday-theme on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyo-day-theme/)**.
+   This is the main look.
+2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, blue
+   menu hover, blue accents and blank new-tab tiles on top of the add-on
+   (they also work with Firefox's built-in Light theme):
 
 ```bash
 ./firefox/install.sh
 ```
 
-Fully restart Firefox afterward: `userChrome.css` is only parsed at startup.
+Fully quit Firefox afterward. Details and CSS rules: [`firefox/README.md`](firefox/README.md).
 
-Full details and CSS gotchas in [`firefox/README.md`](firefox/README.md).
+---
+
+## Cursor
+
+**Oxygen** cursors recoloured to the icon colours, one per folder colour of the
+Cosmic-TokyoDay icon pack: **Blue** (default), **Purple**, **Green**, **Ink**. Patched with the cursor
+names COSMIC apps ask for. COSMIC has no cursor picker yet, so the script sets it:
+
+```bash
+./cursors/install.sh                      # Blue
+./cursors/install.sh --variant Purple    # or another, see --list
+reboot
+```
+
+Previews, what the script touches, how to undo it and how the colours are made:
+[`cursors/README.md`](cursors/README.md).
 
 ---
 
@@ -200,17 +221,14 @@ Full details and CSS gotchas in [`firefox/README.md`](firefox/README.md).
 
 ### `update_system.sh`
 
-nala + flatpak updater with Tokyo Day coloured output: nala package updates
-(apt fallback), Flatpak updates, a Snap function that is off by default
-(uncomment `update_snap` in `main`), and a runtime timer.
+nala + flatpak updater. Headers in ink, info in blue, success in green,
+errors in red; the banner ramps from ink to blue. All dark enough for a light
+terminal.
 
 ```bash
 chmod +x scripts/update_system.sh
 ./scripts/update_system.sh
 ```
-
-Don't run the whole script with `sudo`: `flatpak update` would then only
-update system-wide installs and skip your per-user Flatpaks.
 
 ---
 
@@ -221,8 +239,8 @@ Need a [Nerd Font](https://www.nerdfonts.com/) in the terminal for the icons
 
 ### zsh
 
-`zsh/tokyoday.zsh` is the rice part of the shell only: `LS_COLORS` (also
-used by lsd for file names and by the completion menu), Tokyo Day colours
+`zsh/tokyoday.zsh` is the rice part of the shell only: `LS_COLORS` (also used
+by lsd for file names and by the completion menu), blue / green / red colours
 for zsh-autosuggestions and zsh-syntax-highlighting, lsd / bat / nvim aliases
 and the starship prompt. Your own `~/.zshrc` stays private and sources it.
 
@@ -242,8 +260,8 @@ In `~/.zshrc` keep `ZSH_THEME=""` and
 
 File names are coloured by `LS_COLORS` from `zsh/tokyoday.zsh`;
 `lsd/colors.yaml` colours the other columns with the 256-colour codes nearest
-the palette (149 green, 111 blue, 179 yellow, 210 red, 141 purple,
-60 comment). lsd 1.0.0 does not accept `#hex` there.
+the palette (25 blue, 24 cyan, 23 green, 94 yellow, 95 red, 97 purple,
+243 muted, 245 comment, 238 ink). lsd 1.0.0 does not accept `#hex` there.
 
 ```bash
 ./lsd/install.sh
@@ -252,10 +270,9 @@ lsd -l
 
 ### fastfetch
 
-COSMIC logo in Tokyo Day blue, Hardware / Software / Age boxes in comment
-grey with purple titles, the same layout as every other rice. `install.sh`
-backs up any existing `~/.config/fastfetch/config.jsonc` to
-`config.jsonc.bak`.
+COSMIC logo in ink, Hardware / Software / Age boxes in pale grey with blue
+keys. `install.sh` backs up any existing `~/.config/fastfetch/config.jsonc`
+to `config.jsonc.bak`.
 
 ```bash
 ./fastfetch/install.sh
@@ -265,47 +282,30 @@ fastfetch
 ### Neovim
 
 `nvim/` carries the rice into Neovim: a dependency-free colorscheme built from
-the palette (`nvim/colors/tokyoday.lua`), a LazyVim spec that selects it and
-makes sure the treesitter parsers for the files in this repo are installed
-(`nvim/lua/plugins/tokyoday.lua`), and a small RON syntax file so
-`cosmic/*.ron` is coloured even before the parser exists. `:terminal` inside
-Neovim uses the Tokyo Day scheme.
+the palette (`nvim/colors/tokyoday.lua`), a LazyVim spec that selects it and makes
+sure the treesitter parsers for the files in this repo are installed
+(`nvim/lua/plugins/tokyoday.lua`), and a small RON syntax file so `cosmic/*.ron`
+is coloured even before the parser exists. `:terminal` inside Neovim uses the
+Tokyo Day scheme.
 
 ```bash
 ./nvim/install.sh
 # restart nvim; LazyVim switches to the tokyoday colorscheme
 ```
 
-Without LazyVim, copy `nvim/colors/tokyoday.lua` to `~/.config/nvim/colors/`
-and run `:colorscheme tokyoday`.
+Without LazyVim, copy `nvim/colors/tokyoday.lua` to `~/.config/nvim/colors/` and
+run `:colorscheme tokyoday`.
 
 ### btop
 
-`btop/TokyoDay.theme`: navy background, blue titles, green → yellow → red
-meters.
+`btop/TokyoDay.theme`: terminal background, ink boxes, blue highlights,
+meters ramp from green through blue to red.
 
 ```bash
 mkdir -p ~/.config/btop/themes
 cp btop/TokyoDay.theme ~/.config/btop/themes/
-# btop → Esc → Options → Color theme → TokyoDay
+# btop → Esc → Options → Color theme → Tokyo Day
 ```
-
----
-
-## Cursor
-
-**Oxygen** cursors recoloured to the icon colours, one per folder colour of the
-Cosmic-TokyoDay icon pack: **Blue** (default), **Purple**, **Green**, **Dark**. Patched with the cursor
-names COSMIC apps ask for. COSMIC has no cursor picker yet, so the script sets it:
-
-```bash
-./cursors/install.sh                      # Blue
-./cursors/install.sh --variant Purple    # or another, see --list
-reboot
-```
-
-Previews, what the script touches, how to undo it and how the colours are made:
-[`cursors/README.md`](cursors/README.md).
 
 ---
 
@@ -314,13 +314,13 @@ Previews, what the script touches, how to undo it and how the colours are made:
 Icons: **Cosmic-TokyoDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-four colors: **Blue** `#7AA2F7` (default), **Purple** `#BB9AF7`, **Green** `#9ECE6A` and **Dark** `#292E42` with blue symbols.
+four colors: **Blue** `#2959AA` (default), **Purple** `#7B43BA`, **Green** `#33635C` and **Ink** `#343B59` with blue symbols.
 
 ![Cosmic-TokyoDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TokyoDay.png)
 
 ```bash
-./icons/install.sh                   # Blue folders
-./icons/install.sh --variant Purple  # or Green, Dark
+./icons/install.sh                  # Blue folders
+./icons/install.sh --variant Purple # or Green, Ink
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
@@ -329,49 +329,37 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers ship in [`backgrounds/`](backgrounds/), named `tokyoday-<subject>.png`:
-the thirteen subjects every dark rice has, rendered in Tokyo Day blue and yellow:
-the Harbor Dark reaper and Hyundai blueprint, the COSMIC astronaut, the samurai,
-sushi switch, geisha, JS mug and neon street from the Tokyo Day set, The Greek
-eagle and ink portrait, and three new scenes: city, panel and tower.
-Plus the astronaut on black, `tokyoday-cosmic-astronaut-black.png`: the one in the
-screenshot, and the image the Firefox palette was sampled from.
-The subjects come from [HANCORE-linux](https://github.com/HANCORE-linux) (MIT) and
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers); each was rendered again in this palette, then upscaled.
-The big Tokyo Day set stays in cool-wallpapers, folder
-[`tokyoday/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyoday).
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `tokyoday-<subject>.png`.
+For now that is the stripes, plus `tokyoday.gpl`, the GIMP palette the
+illustrated subjects (eagle, samurai, reaper, city, geisha, blueprint, sushi
+switch) are recoloured with; they land as they are rendered.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`.
-
-![The astronaut wallpaper on the Tokyo Day desktop, panel only](assets/wallpaper.png)
 
 ---
 
 ## Setup
-
-Prerequisites: [nala](https://gitlab.com/volian/nala) for the update script
-and a recent fastfetch.
-
-```bash
-sudo apt install nala
-sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
-sudo nala update && sudo nala install fastfetch
-```
-
-Then:
 
 ```bash
 git clone https://github.com/atraxsrc/cosmic-tokyoday-theme.git
 cd cosmic-tokyoday-theme
 
 # desktop
-# Settings → Appearance → Dark → Import cosmic/TokyoDay.ron
+# Settings → Appearance → Light → Import cosmic/TokyoDay.ron
 
 # terminal
-# View → Color schemes → Import cosmic-term/TokyoDay-term.ron
+# View → Color schemes → Light tab → Import cosmic-term/TokyoDay-term.ron
 
-# firefox stylesheets (optional)
+# firefox add-on
+# https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyo-day-theme/
+
+# optional extra chrome
 ./firefox/install.sh
+
+# cursor (then reboot), see cursors/README.md
+./cursors/install.sh                      # Blue
+./cursors/install.sh --variant Purple    # or another, see --list
+reboot
 
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
@@ -383,7 +371,6 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoDay.theme ~/.config/btop/themes/
 # wallpaper
 # Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
-./cursors/install.sh                # cursor, Blue (see Cursor above), then reboot
 ./icons/install.sh                  # icons (see Icons above)
 # Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
@@ -402,15 +389,17 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoDay.theme ~/.config/btop/themes/
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
-| [nala](https://gitlab.com/volian/nala) | Nicer apt frontend for the update script |
 | [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-TokyoDay), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 | [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor, recoloured to the icon colours |
 
 ## Credits
 
-- Palette: [Tokyo Day](https://github.com/tokyo-night/tokyo-night-vscode-theme),
-  the VS Code theme. This repo is a COSMIC port.
-- Shared baseline (frosted glass, squared corners, fonts) from
+- Palette: Tokyo Night Light from
+  [tokyo-night-vscode-theme](https://github.com/tokyo-night/tokyo-night-vscode-theme) (MIT).
+  This repo is a COSMIC port; the ANSI set is upstream's, bright and dim are
+  derived from it.
+- Dark half: [cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-tokyonight-theme).
+  Shared baseline (frosted glass, squared corners, fonts) from
   [cosmic-darkgold-theme](https://github.com/atraxsrc/cosmic-darkgold-theme).
 
 ## License

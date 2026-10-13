@@ -1,6 +1,6 @@
-# TokyoDay
+# Tokyo Day
 
-> Tokyo Day on COSMIC, blue chrome and a lime focus accent.
+> Lavender grey, ink and blue. The light half of Tokyo Night / Tokyo Day.
 
 Pop!_OS 24.04 on the COSMIC desktop, one palette carried through the whole
 machine: desktop, terminal, shell, editor, browser. This note is the rice
@@ -8,42 +8,43 @@ describing itself, written in Markdown and rendered by **Postilla**.
 
 ## Palette
 
-Every text colour is checked against the window background `#1A1B26`.
+Every text colour is checked against the window background `#E6E7ED`.
 
 | Role | Hex | Contrast on background |
 |------|-----|------------------------|
-| Text | `#C0CAF5` | 10.6:1 |
-| Blue, accent | `#7AA2F7` | 6.8:1 |
-| Green, success | `#9ECE6A` | 9.4:1 |
-| Yellow | `#E0AF68` | 8.5:1 |
-| Red, error | `#F7768E` | 6.5:1 |
-| Cyan | `#7DCFFF` | 10.0:1 |
-| Purple | `#BB9AF7` | 7.4:1 |
+| Text | `#343B59` | 8.9:1 |
+| Blue, accent | `#2959AA` | 5.5:1 |
+| Green, success | `#33635C` | 5.5:1 |
+| Yellow, warning | `#8F5E15` | 4.5:1 |
+| Red, error | `#8C4351` | 5.6:1 |
+| Purple | `#7B43BA` | 5.1:1 |
+| Cyan, symlinks | `#006C86` | 4.9:1 |
 
-Containers sit one step away from the background at `#24283B`, which is
-what frosted glass blurs into.
+Containers sit one step away from the background at `#DEE0E6`, which is
+what frosted glass blurs into. The terminal is the exception: an opaque pane
+at `#D6D8DF`, a step darker than the desktop.
 
 ## Where the colours go
 
 ```mermaid
 flowchart LR
-    P[TokyoDay palette] --> D[COSMIC desktop<br/>TokyoDay.ron, Dark slot]
+    P[Tokyo Day palette] --> D[COSMIC desktop<br/>TokyoDay.ron, Light slot]
     P --> T[COSMIC Terminal<br/>Tokyo Day]
     P --> S[zsh layer<br/>LS_COLORS, highlighting, starship]
     P --> E[Postilla<br/>syntax theme from the terminal scheme]
     T --> B[btop, bat, lsd, fastfetch]
-    D --> F[Firefox<br/>Cosmic Night theme + userChrome]
+    D --> F[Firefox<br/>Cosmic Tokyo Day + userChrome]
 ```
 
 ## Setup, in order
 
-- [x] Import `cosmic/TokyoDay.ron` into Appearance, **Dark** slot
+- [x] Import `cosmic/TokyoDay.ron` into Appearance, **Light** slot
 - [x] Import `cosmic-term/TokyoDay-term.ron`, pick **Tokyo Day** for the profile
 - [x] `./icons/install.sh` for the **Cosmic-TokyoDay** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-TokyoDay-Blue
-- [x] Wallpaper: `backgrounds/tokyoday-cosmic-astronaut-black.png`
-- [x] Screenshot for the README
+- [ ] Wallpaper: `backgrounds/tokyoday-stripes.png` until the illustrated set is rendered
+- [ ] Screenshot for the README
 
 ## The baseline every rice shares
 
@@ -52,7 +53,7 @@ corner_radii: (
     radius_xs: (2.0, 2.0, 2.0, 2.0),   // squared corners
     radius_xl: (2.0, 2.0, 2.0, 2.0),
 ),
-frosted: VeryLow,
+frosted: Low,
 frosted_windows: true,
 frosted_panel: true,
 frosted_applets: true,
