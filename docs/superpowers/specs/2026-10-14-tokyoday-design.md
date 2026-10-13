@@ -271,7 +271,8 @@ wallpaper yet). Manifest name "Cosmic Tokyo Day", a new gecko id, version
 1.0, icons regenerated in blue on `#E6E7ED`. Colour roles map as Dossier's
 manifest does: frame and new tab `#E6E7ED`, toolbar and popups `#DEE0E6`,
 URL field `#ECEDF2` (window background blended 25 percent toward white, the
-field sits above the toolbar), text ink, inactive tab text muted, accent roles
+field sits above the toolbar), text ink, inactive tab text `#565C75` (neutral_8, 5.4:1 on the frame; muted
+would be 3.9:1, under the README's 4.5:1 promise), accent roles
 (tab line, field focus, highlights, attention icons, loading) blue, icons
 green `#33635C`, button hover `#C9CBD2`, popup border `#969AAA`, sidebar
 border `#B1B3C1`, highlight text `#E6E7ED`. `userChrome.css` and
