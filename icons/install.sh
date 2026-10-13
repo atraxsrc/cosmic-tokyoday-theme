@@ -16,7 +16,7 @@
 set -euo pipefail
 
 THEME="TokyoDay"
-VARIANTS=(Blue Purple Green Dark)
+VARIANTS=(Blue Purple Green Ink)
 VARIANT="Blue"
 BASE="${COSMIC_ICONS_URL:-https://github.com/atraxsrc/cosmic-icon-themes/releases/latest/download}"
 USER_DEST="$HOME/.local/share/icons"
