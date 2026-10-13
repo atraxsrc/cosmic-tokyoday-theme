@@ -4,6 +4,14 @@
 -- and syntax roles follow the COSMIC Terminal scheme (Tokyo Day). No plugin
 -- needed: drop it in ~/.config/nvim/colors/ and :colorscheme tokyoday.
 
+local p = {
+  bg = "#D6D8DF", bg1 = "#E6E7ED", bg2 = "#C5C7CD",
+  fg = "#343B59", muted = "#707280", dim = "#888B94",
+  accent = "#2959AA", success = "#33635C", warning = "#8F5E15", error = "#8C4351",
+  kw = "#65359D", fn = "#2959AA", str = "#385F0D", num = "#965027", typ = "#006C86",
+  op = "#707280", cmt = "#888B94", spec = "#965027", link = "#006C86",
+}
+
 vim.cmd.highlight("clear")
 if vim.fn.exists("syntax_on") == 1 then vim.cmd.syntax("reset") end
 vim.o.termguicolors = true
