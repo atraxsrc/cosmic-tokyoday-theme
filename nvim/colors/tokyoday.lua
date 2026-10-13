@@ -1,21 +1,13 @@
--- TokyoDay colorscheme for Neovim, part of cosmic-tokyoday-theme.
--- Generated from the rice palette: the editor background is the window
--- background, text is the rice text colour, and syntax roles follow the
--- COSMIC Terminal scheme (Tokyo Day). No plugin needed: drop it in
--- ~/.config/nvim/colors/ and :colorscheme tokyoday.
-
-local p = {
-  bg = "#1A1B26", bg1 = "#24283B", bg2 = "#414868",
-  fg = "#C0CAF5", muted = "#A9B1D6", dim = "#565F89",
-  accent = "#7AA2F7", success = "#9ECE6A", warning = "#E0AF68", error = "#F7768E",
-  kw = "#BB9AF7", fn = "#7AA2F7", str = "#9ECE6A", num = "#FF9E64", typ = "#2AC3DE",
-  op = "#89DDFF", cmt = "#565F89", spec = "#7DCFFF", link = "#7DCFFF",
-}
+-- Tokyo Day colorscheme for Neovim, part of cosmic-tokyoday-theme.
+-- Generated from the rice palette: the editor background is the terminal
+-- pane (#D6D8DF, floats on the window colour), text is the rice text colour,
+-- and syntax roles follow the COSMIC Terminal scheme (Tokyo Day). No plugin
+-- needed: drop it in ~/.config/nvim/colors/ and :colorscheme tokyoday.
 
 vim.cmd.highlight("clear")
 if vim.fn.exists("syntax_on") == 1 then vim.cmd.syntax("reset") end
 vim.o.termguicolors = true
-vim.o.background = "dark"
+vim.o.background = "light"
 vim.g.colors_name = "tokyoday"
 
 local hi = function(group, spec) vim.api.nvim_set_hl(0, group, spec) end
@@ -260,19 +252,19 @@ hi("SnacksDashboardDesc", { fg = p.fg })
 hi("SnacksDashboardFooter", { fg = p.dim })
 
 -- :terminal uses the COSMIC Terminal scheme of this rice
-vim.g.terminal_color_0 = "#1D202F"
-vim.g.terminal_color_1 = "#F93356"
-vim.g.terminal_color_2 = "#8FD78A"
-vim.g.terminal_color_3 = "#E9BD64"
-vim.g.terminal_color_4 = "#5C9FF4"
-vim.g.terminal_color_5 = "#B974DC"
-vim.g.terminal_color_6 = "#59C2C7"
-vim.g.terminal_color_7 = "#A9B1D6"
-vim.g.terminal_color_8 = "#646A83"
-vim.g.terminal_color_9 = "#F47687"
-vim.g.terminal_color_10 = "#A3D7A3"
-vim.g.terminal_color_11 = "#ECD3A0"
-vim.g.terminal_color_12 = "#91C0F4"
-vim.g.terminal_color_13 = "#CEB1EC"
-vim.g.terminal_color_14 = "#7AD1D9"
-vim.g.terminal_color_15 = "#C4CFF4"
+vim.g.terminal_color_0 = "#343B58"
+vim.g.terminal_color_1 = "#8C4351"
+vim.g.terminal_color_2 = "#33635C"
+vim.g.terminal_color_3 = "#8F5E15"
+vim.g.terminal_color_4 = "#2959AA"
+vim.g.terminal_color_5 = "#7B43BA"
+vim.g.terminal_color_6 = "#006C86"
+vim.g.terminal_color_7 = "#707280"
+vim.g.terminal_color_8 = "#2C324B"
+vim.g.terminal_color_9 = "#773945"
+vim.g.terminal_color_10 = "#2B544E"
+vim.g.terminal_color_11 = "#7A5012"
+vim.g.terminal_color_12 = "#234C90"
+vim.g.terminal_color_13 = "#69399E"
+vim.g.terminal_color_14 = "#005C72"
+vim.g.terminal_color_15 = "#5F616D"
