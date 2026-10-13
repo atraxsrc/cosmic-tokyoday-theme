@@ -16,7 +16,7 @@ set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RICE="TokyoDay"
-VARIANTS=(Blue Purple Green Dark)
+VARIANTS=(Blue Purple Green Ink)
 VARIANT="Blue"
 SIZE="${XCURSOR_SIZE_OVERRIDE:-24}"
 DEST="/usr/share/icons"

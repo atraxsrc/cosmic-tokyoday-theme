@@ -3,15 +3,15 @@
 **Oxygen** cursors (the original KDE Oxygen designs, as collected by
 [wo2ni/Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors)) recoloured to this
 rice's icon colours: one per folder colour of the
-[Cosmic-TokyoDay](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Blue**, **Purple**, **Green**, **Dark**.
+[Cosmic-TokyoDay](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Blue**, **Purple**, **Green**, **Ink**.
 All patched so they work in COSMIC's own apps.
 
-| Variant | Preview | Body | Contrast on `#1A1B26` | Goes with |
+| Variant | Preview | Body | Contrast on `#E6E7ED` | Goes with |
 | ------- | ------- | ---- | ------------------- | --------- |
-| **Blue** (default) | ![](../assets/cursors/Oxygen-TokyoDay-Blue.png) | `#7AA2F7` | 6.8:1 | Blue folders |
-| **Purple** | ![](../assets/cursors/Oxygen-TokyoDay-Purple.png) | `#BB9AF7` | 7.4:1 | Purple folders |
-| **Green** | ![](../assets/cursors/Oxygen-TokyoDay-Green.png) | `#9ECE6A` | 9.4:1 | Green folders |
-| **Dark** | ![](../assets/cursors/Oxygen-TokyoDay-Dark.png) | `#292E42` | 1.3:1 | Dark folders |
+| **Blue** (default) | ![](../assets/cursors/Oxygen-TokyoDay-Blue.png) | `#2959AA` | 5.5:1 | Blue folders |
+| **Purple** | ![](../assets/cursors/Oxygen-TokyoDay-Purple.png) | `#7B43BA` | 5.1:1 | Purple folders |
+| **Green** | ![](../assets/cursors/Oxygen-TokyoDay-Green.png) | `#33635C` | 5.5:1 | Green folders |
+| **Ink** | ![](../assets/cursors/Oxygen-TokyoDay-Ink.png) | `#343B59` | 8.9:1 | Ink folders |
 
 Each variant is a normal folder here (`Oxygen-TokyoDay-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.
@@ -23,8 +23,8 @@ Any coloured variant works as the base. To add a colour:
 
 ```bash
 ../cosmic-darkgold-theme/cursors/recolour.py --base cursors/Oxygen-TokyoDay-Blue \
-  --out cursors/Oxygen-TokyoDay-Teal --name "Oxygen TokyoDay Teal" --colour '#2F8F8F' \
-  --preview assets/cursors/Oxygen-TokyoDay-Teal.png --bg '#1A1B26'
+  --out cursors/Oxygen-TokyoDay-Teal --name "Oxygen TokyoDay Teal" --colour '#006C86' \
+  --preview assets/cursors/Oxygen-TokyoDay-Teal.png --bg '#E6E7ED'
 ```
 
 then add `Teal` to `VARIANTS` in `install.sh` and `uninstall.sh`.
