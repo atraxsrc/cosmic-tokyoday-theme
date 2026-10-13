@@ -132,7 +132,7 @@ not merged.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 
-Pairing tip: import `Tokyo Night.ron` from
+Pairing tip: import `TokyoNight.ron` from
 [cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-tokyonight-theme) into the
 Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
 Firefox and the shell layer do not follow the toggle; those are per-rice files.
