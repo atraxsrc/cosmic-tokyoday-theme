@@ -26,21 +26,24 @@ background `#E6E7ED`. Muted and comment sit low on purpose, as upstream does.
 The terminal is an opaque pane `#D6D8DF`, a step darker than the desktop,
 where yellow, purple, cyan and the number colour land between 3.9 and 4.4:1.
 
-| Role | Hex | On window | On pane |
-|------|-----|-----------|---------|
-| Text, ink | `#343B59` | 8.9 | 7.7 |
-| Accent, blue | `#2959AA` | 5.5 | 4.8 |
-| Success, green | `#33635C` | 5.5 | 4.8 |
-| Warning, yellow | `#8F5E15` | 4.5 | 3.9 |
-| Error, red | `#8C4351` | 5.6 | 4.9 |
-| Purple | `#7B43BA` | 5.1 | 4.4 |
-| Cyan | `#006C86` | 4.9 | 4.2 |
-| String | `#385F0D` | 6.1 | 5.2 |
-| Number | `#965027` | 4.9 | 4.2 |
-| Keyword | `#65359D` | 6.7 | 5.8 |
-| Muted | `#707280` | 3.9 | 3.3 |
-| Comment | `#888B94` | 2.8 | 2.4 |
-| Line numbers | `#9DA0AB` | 2.1 | 1.8 |
+| Role | Color | Hex | On window | On pane |
+|------|-------|-----|-----------|---------|
+| Window background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) | `#E6E7ED` | | |
+| Primary container | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) | `#DEE0E6` | | |
+| Secondary container, terminal pane | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) | `#D6D8DF` | | |
+| Text, ink | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) | `#343B59` | 8.9 | 7.7 |
+| Accent, blue | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) | `#2959AA` | 5.5 | 4.8 |
+| Success, green | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) | `#33635C` | 5.5 | 4.8 |
+| Warning, yellow | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) | `#8F5E15` | 4.5 | 3.9 |
+| Error, red | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) | `#8C4351` | 5.6 | 4.9 |
+| Purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) | `#7B43BA` | 5.1 | 4.4 |
+| Cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) | `#006C86` | 4.9 | 4.2 |
+| String | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) | `#385F0D` | 6.1 | 5.2 |
+| Number | ![#965027](https://placehold.co/12x12/965027/965027.png) | `#965027` | 4.9 | 4.2 |
+| Keyword | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) | `#65359D` | 6.7 | 5.8 |
+| Muted | ![#707280](https://placehold.co/12x12/707280/707280.png) | `#707280` | 3.9 | 3.3 |
+| Comment | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) | `#888B94` | 2.8 | 2.4 |
+| Line numbers | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) | `#9DA0AB` | 2.1 | 1.8 |
 
 Containers: primary `#DEE0E6`, secondary `#D6D8DF`. Window hint `#2959AA`.
 
