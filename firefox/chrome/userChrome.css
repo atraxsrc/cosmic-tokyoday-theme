@@ -116,7 +116,7 @@ menupopup menu {
 }
 
 /* hover / keyboard-active row
-   Rust-tinted fill + ink text + slim blue rail so the pointer
+   Blue-tinted fill + ink text + slim blue rail so the pointer
    position is obvious without leaving Tokyo Day. */
 #appMenu-popup .subviewbutton:not([disabled]):hover,
 #widget-overflow .subviewbutton:not([disabled]):hover,

@@ -56,7 +56,7 @@ on the terminal pane `#D6D8DF` in the last column.
 | String, nvim and zsh | `#385F0D` | 6.1 | 5.2 |
 | Number, nvim | `#965027` | 4.9 | 4.2 |
 | Keyword, nvim | `#65359D` | 6.7 | 5.8 |
-| Line numbers, autosuggest | `#9DA0AB` | 2.1 | 1.8 |
+| Faint, btop inactive text | `#9DA0AB` | 2.1 | 1.8 |
 
 Muted and comment sit under 4.5:1 on purpose, as in the dark repo, where
 comment is 2.8:1 and muted 4.1:1. They are never used for text a user has to

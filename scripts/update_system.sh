@@ -2,7 +2,7 @@
 set -eo pipefail
 
 # ─────────────────────────────────────────────
-#  Tokyo Day palette
+#  Tokyo Day palette (light terminal)
 #  pane:    #D6D8DF   fg:      #343B59   (terminal pane; window bg #E6E7ED)
 #  blue:    #2959AA   green:   #33635C
 #  yellow:  #8F5E15   red:     #8C4351

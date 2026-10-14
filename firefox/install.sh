@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install the Cosmic Night userChrome/userContent stylesheets into the
+# Install the Tokyo Day userChrome/userContent stylesheets into the
 # default Firefox profile, or into the profile folder given as the
 # first argument. Backs up anything it replaces. Never deletes.
 set -euo pipefail
