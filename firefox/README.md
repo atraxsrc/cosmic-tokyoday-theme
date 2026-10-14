@@ -15,10 +15,10 @@ Stylesheets:
 | `#C8D0DF` | Menu hover row (blue tinted into the panel) |
 | `#BAC5DA` | Menu pressed row          |
 | `#B1B3C1` | Separators, menu border   |
-| `#2959AA` | Accent, URL bar border, hover rail |
+| `#2959AA` | Accent, URL bar border, hover rail, links |
 | `#234C90` | Button hover (deep blue)  |
 | `#33635C` | New tab accent, active    |
-| `#343B59` | Menu text, links and hover text (ink) |
+| `#343B59` | Menu text and link hover text (ink) |
 | `#E6E7ED` | Text on blue              |
 
 ## Structure

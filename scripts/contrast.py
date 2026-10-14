@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Tokyo Day palette contrast table. Exit 1 if a readable role is under 4.5:1 on the window."""
+"""Tokyo Day palette table for the README, contrast measured on the window background.
+Exit 1 if a readable role is under 4.5:1."""
 import sys
 
 WINDOW = "#E6E7ED"
@@ -7,25 +8,26 @@ PANE = "#D6D8DF"
 
 # (role, hex, reads) where reads=True means a user reads it as text.
 SURFACES = [
-    ("Window background", "#E6E7ED"),
-    ("Primary container", "#DEE0E6"),
-    ("Secondary container, terminal pane", "#D6D8DF"),
+    ("Background", "Lavender grey", ["#E6E7ED"]),
+    ("Containers", "Mist / Pane", ["#DEE0E6", "#D6D8DF"]),
+    ("Terminal", "Pane, opaque", ["#D6D8DF"]),
 ]
 
+# (role, name, hex, reads) where reads=True means a user reads it as text.
 ROLES = [
-    ("Text, ink", "#343B59", True),
-    ("Accent, blue", "#2959AA", True),
-    ("Success, green", "#33635C", True),
-    ("Warning, yellow", "#8F5E15", True),
-    ("Error, red", "#8C4351", True),
-    ("Purple", "#7B43BA", True),
-    ("Cyan", "#006C86", True),
-    ("String", "#385F0D", True),
-    ("Number", "#965027", True),
-    ("Keyword", "#65359D", True),
-    ("Muted", "#707280", False),
-    ("Comment", "#888B94", False),
-    ("Line numbers", "#9DA0AB", False),
+    ("Text", "Ink", "#343B59", True),
+    ("Accent", "Blue", "#2959AA", True),
+    ("Success", "Green", "#33635C", True),
+    ("Warning", "Yellow", "#8F5E15", True),
+    ("Error", "Red", "#8C4351", True),
+    ("Purple", "Violet", "#7B43BA", True),
+    ("Cyan", "Teal", "#006C86", True),
+    ("String", "Moss", "#385F0D", True),
+    ("Number", "Umber", "#965027", True),
+    ("Keyword", "Grape", "#65359D", True),
+    ("Muted", "Slate", "#707280", False),
+    ("Comment", "Grey", "#888B94", False),
+    ("Faint", "btop inactive text", "#9DA0AB", False),
 ]
 
 
@@ -47,13 +49,15 @@ def ratio(a, b):
 
 def main():
     bad = []
-    print("| Role | Color | Hex | On window | On pane |")
-    print("|------|-------|-----|-----------|---------|")
-    for role, hexv in SURFACES:
-        print(f"| {role} | {swatch(hexv)} | `{hexv}` | | |")
-    for role, hexv, reads in ROLES:
+    print("| Role | Color | Hex | Contrast |")
+    print("|------|-------|-----|----------|")
+    for role, name, hexes in SURFACES:
+        sw = " ".join(swatch(h) for h in hexes)
+        hx = " / ".join(f"`{h}`" for h in hexes)
+        print(f"| {role} | {sw} {name} | {hx} | |")
+    for role, name, hexv, reads in ROLES:
         w, p = ratio(hexv, WINDOW), ratio(hexv, PANE)
-        print(f"| {role} | {swatch(hexv)} | `{hexv}` | {w:.1f} | {p:.1f} |")
+        print(f"| {role} | {swatch(hexv)} {name} | `{hexv}` | {w:.1f}:1 |")
         if reads and w < 4.5:
             bad.append((role, w))
     for role, w in bad:
