@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Tokyo Day palette table for the README, contrast measured on the window background.
-Exit 1 if a readable role is under 4.5:1."""
+"""Tokyo Day palette table for the README (stdout) with contrast ratios on stderr.
+Exit 1 if a readable role is under 4.5:1 on the window background."""
 import sys
 
 WINDOW = "#E6E7ED"
@@ -49,15 +49,15 @@ def ratio(a, b):
 
 def main():
     bad = []
-    print("| Role | Color | Hex | Contrast |")
-    print("|------|-------|-----|----------|")
+    print("| Role | Color | Hex |")
+    print("|------|-------|-----|")
     for role, name, hexes in SURFACES:
-        sw = " ".join(swatch(h) for h in hexes)
         hx = " / ".join(f"`{h}`" for h in hexes)
-        print(f"| {role} | {sw} {name} | {hx} | |")
+        print(f"| {role} | {swatch(hexes[0])} {name} | {hx} |")
     for role, name, hexv, reads in ROLES:
         w, p = ratio(hexv, WINDOW), ratio(hexv, PANE)
-        print(f"| {role} | {swatch(hexv)} {name} | `{hexv}` | {w:.1f}:1 |")
+        print(f"| {role} | {swatch(hexv)} {name} | `{hexv}` |")
+        print(f"  {role}: {w:.1f}:1 on window, {p:.1f}:1 on pane", file=sys.stderr)
         if reads and w < 4.5:
             bad.append((role, w))
     for role, w in bad:

@@ -26,27 +26,27 @@ background `#E6E7ED`. Muted and comment sit low on purpose, as upstream does.
 The terminal is an opaque pane `#D6D8DF`, a step darker than the desktop,
 where yellow, purple, cyan and the number colour land between 3.9 and 4.4:1.
 
-| Role | Color | Hex | Contrast |
-|------|-------|-----|----------|
-| Background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) Lavender grey | `#E6E7ED` | |
-| Containers | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) Mist / Pane | `#DEE0E6` / `#D6D8DF` | |
-| Terminal | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) Pane, opaque | `#D6D8DF` | |
-| Text | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) Ink | `#343B59` | 8.9:1 |
-| Accent | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) Blue | `#2959AA` | 5.5:1 |
-| Success | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) Green | `#33635C` | 5.5:1 |
-| Warning | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) Yellow | `#8F5E15` | 4.5:1 |
-| Error | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) Red | `#8C4351` | 5.6:1 |
-| Purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) Violet | `#7B43BA` | 5.1:1 |
-| Cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) Teal | `#006C86` | 4.9:1 |
-| String | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) Moss | `#385F0D` | 6.1:1 |
-| Number | ![#965027](https://placehold.co/12x12/965027/965027.png) Umber | `#965027` | 4.9:1 |
-| Keyword | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) Grape | `#65359D` | 6.7:1 |
-| Muted | ![#707280](https://placehold.co/12x12/707280/707280.png) Slate | `#707280` | 3.9:1 |
-| Comment | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) Grey | `#888B94` | 2.8:1 |
-| Faint | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) btop inactive text | `#9DA0AB` | 2.1:1 |
+| Role | Color | Hex |
+|------|-------|-----|
+| Background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) Lavender grey | `#E6E7ED` |
+| Containers | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) Mist / Pane | `#DEE0E6` / `#D6D8DF` |
+| Terminal | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) Pane, opaque | `#D6D8DF` |
+| Text | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) Ink | `#343B59` |
+| Accent | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) Blue | `#2959AA` |
+| Success | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) Green | `#33635C` |
+| Warning | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) Yellow | `#8F5E15` |
+| Error | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) Red | `#8C4351` |
+| Purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) Violet | `#7B43BA` |
+| Cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) Teal | `#006C86` |
+| String | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) Moss | `#385F0D` |
+| Number | ![#965027](https://placehold.co/12x12/965027/965027.png) Umber | `#965027` |
+| Keyword | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) Grape | `#65359D` |
+| Muted | ![#707280](https://placehold.co/12x12/707280/707280.png) Slate | `#707280` |
+| Comment | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) Grey | `#888B94` |
+| Faint | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) btop inactive text | `#9DA0AB` |
 
-Contrast is measured on the window background; on the terminal pane every
-value is about 0.4 lower. Window hint `#2959AA`.
+Window hint `#2959AA`. Ratios per role are in `docs/showcase.md`, or run
+`python3 scripts/contrast.py`.
 
 | Role | Tokyo Day | Tokyo Night |
 |------|-----------|-------------|
