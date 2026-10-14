@@ -186,7 +186,7 @@ background. On the pane yellow, purple, cyan and the number colour land between
 Two layers:
 
 1. **Theme (colours):** install
-   **[cosmic-tokyoday-theme on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyo-day-theme/)**.
+   **[cosmic-tokyoday-theme on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyoday-theme/)**.
    This is the main look.
 2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, blue
    menu hover, blue accents and blank new-tab tiles on top of the add-on
@@ -354,7 +354,7 @@ cd cosmic-tokyoday-theme
 # View → Color schemes → Light tab → Import cosmic-term/TokyoDay-term.ron
 
 # firefox add-on
-# https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyo-day-theme/
+# https://addons.mozilla.org/en-US/firefox/addon/cosmic-tokyoday-theme/
 
 # optional extra chrome
 ./firefox/install.sh
