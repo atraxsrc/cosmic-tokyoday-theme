@@ -6,6 +6,12 @@ WINDOW = "#E6E7ED"
 PANE = "#D6D8DF"
 
 # (role, hex, reads) where reads=True means a user reads it as text.
+SURFACES = [
+    ("Window background", "#E6E7ED"),
+    ("Primary container", "#DEE0E6"),
+    ("Secondary container, terminal pane", "#D6D8DF"),
+]
+
 ROLES = [
     ("Text, ink", "#343B59", True),
     ("Accent, blue", "#2959AA", True),
@@ -23,6 +29,11 @@ ROLES = [
 ]
 
 
+def swatch(hexv):
+    h = hexv.lstrip("#").lower()
+    return f"![{hexv}](https://placehold.co/12x12/{h}/{h}.png)"
+
+
 def lum(h):
     r, g, b = (int(h[i:i + 2], 16) / 255 for i in (1, 3, 5))
     f = lambda c: c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
@@ -36,11 +47,13 @@ def ratio(a, b):
 
 def main():
     bad = []
-    print("| Role | Hex | On window | On pane |")
-    print("|------|-----|-----------|---------|")
+    print("| Role | Color | Hex | On window | On pane |")
+    print("|------|-------|-----|-----------|---------|")
+    for role, hexv in SURFACES:
+        print(f"| {role} | {swatch(hexv)} | `{hexv}` | | |")
     for role, hexv, reads in ROLES:
         w, p = ratio(hexv, WINDOW), ratio(hexv, PANE)
-        print(f"| {role} | `{hexv}` | {w:.1f} | {p:.1f} |")
+        print(f"| {role} | {swatch(hexv)} | `{hexv}` | {w:.1f} | {p:.1f} |")
         if reads and w < 4.5:
             bad.append((role, w))
     for role, w in bad:
