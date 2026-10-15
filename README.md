@@ -63,6 +63,9 @@ Window hint `#2959AA`. Ratios per role are in `docs/showcase.md`, or run
 .
 ├── btop
 │   └── TokyoDay.theme            # btop colour theme
+├── claude-desktop
+│   ├── cosmic-tokyo-night.jsonc # Claude Desktop theme (claude-desktop-extra), dark + light
+│   └── install.sh
 ├── cosmic
 │   ├── TokyoDay.ron              # COSMIC Appearance import (Light)
 │   ├── config/                  # baseline settings: fonts, icons, terminal look
@@ -201,6 +204,27 @@ Two layers:
 ```
 
 Fully quit Firefox afterward. Details and CSS rules: [`firefox/README.md`](firefox/README.md).
+
+---
+
+## Claude Desktop
+
+For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
+Linux build. `claude-desktop/cosmic-tokyo-night.jsonc` is one theme with both halves:
+Tokyo Night in dark mode and Tokyo Day in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and button text
+4.5:1, accents 3:1).
+
+```bash
+./claude-desktop/install.sh
+```
+
+It copies the file into `~/.config/Claude/themes.d/`. Then press
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-tokyo-night**.
+
+The same file ships in [`cosmic-tokyonight-theme`](https://github.com/atraxsrc/cosmic-tokyonight-theme),
+so installing from either repo gives the same theme.
 
 ---
 
@@ -362,6 +386,9 @@ cd cosmic-tokyoday-theme
 
 # optional extra chrome
 ./firefox/install.sh
+
+# claude desktop (claude-desktop-extra), then Ctrl+Shift+T
+./claude-desktop/install.sh
 
 # cursor (then reboot), see cursors/README.md
 ./cursors/install.sh                      # Blue
