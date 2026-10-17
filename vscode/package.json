@@ -1,0 +1,46 @@
+{
+  "name": "cosmic-tokyo-night-theme",
+  "displayName": "Cosmic Tokyo Night / Cosmic Tokyo Day",
+  "description": "Dark and light colour themes from the COSMIC Tokyo Night / Tokyo Day rice pair, syntax as in their Neovim schemes.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1A1B26",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-tokyonight-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "cosmic",
+    "tokyo-night",
+    "tokyo-day",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Tokyo Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-tokyo-night-color-theme.json"
+      },
+      {
+        "label": "Cosmic Tokyo Day",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-tokyo-day-color-theme.json"
+      }
+    ]
+  }
+}
