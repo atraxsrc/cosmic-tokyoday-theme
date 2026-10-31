@@ -118,6 +118,7 @@ Window hint ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`. 
 │   └── install.sh
 ├── assets
 │   ├── cursors/                 # cursor preview
+│   ├── cosmic-term/             # scheme previews for cosmic-term/README.md
 │   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the car on the bare desktop
@@ -202,6 +203,11 @@ are deeper, dim colours lighter, so bold and dim still read on a light
 background. On the pane yellow, purple, cyan and the number colour land between
 3.9 and 4.4:1, a little under the 4.5:1 the window background keeps; drop the
 `background` line from the scheme to get the window colour back.
+
+If ink is not the plain text you want, there are five other variants
+with the same ANSI colours, from Slate ![#5F616D](https://placehold.co/12x12/5f616d/5f616d.png) `#5F616D` to
+Storm ![#4F566F](https://placehold.co/12x12/4f566f/4f566f.png) `#4F566F`. Previews and which to
+pick: [`cosmic-term/README.md`](cosmic-term/README.md).
 
 ---
 
