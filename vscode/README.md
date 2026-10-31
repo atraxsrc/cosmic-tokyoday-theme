@@ -72,8 +72,8 @@ and background pairs the theme sets.
 Where a Neovim colour falls short, it is darkened (light theme) or lightened
 (dark theme) just far enough here:
 
-- **Tokyo Night**: comments and line numbers `#565F89` → `#5D658E`; warnings and modified files `#E0AF68` → `#E0B06A`.
-- **Tokyo Day**: comments and line numbers `#888B94` → `#81848D`; operators, parameters and secondary labels `#707280` → `#656773`; secondary text (status bar, titles, descriptions) `#656773` → `#5C5E69`; warnings and modified files `#8F5E15` → `#724B11`; added files and success marks `#33635C` → `#2F5B55`.
+- **Tokyo Night**: comments and line numbers ![#565F89](https://placehold.co/12x12/565f89/565f89.png) `#565F89` → ![#5D658E](https://placehold.co/12x12/5d658e/5d658e.png) `#5D658E`; warnings and modified files ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68` → ![#E0B06A](https://placehold.co/12x12/e0b06a/e0b06a.png) `#E0B06A`.
+- **Tokyo Day**: comments and line numbers ![#888B94](https://placehold.co/12x12/888b94/888b94.png) `#888B94` → ![#81848D](https://placehold.co/12x12/81848d/81848d.png) `#81848D`; operators, parameters and secondary labels ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280` → ![#656773](https://placehold.co/12x12/656773/656773.png) `#656773`; secondary text (status bar, titles, descriptions) ![#656773](https://placehold.co/12x12/656773/656773.png) `#656773` → ![#5C5E69](https://placehold.co/12x12/5c5e69/5c5e69.png) `#5C5E69`; warnings and modified files ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` → ![#724B11](https://placehold.co/12x12/724b11/724b11.png) `#724B11`; added files and success marks ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` → ![#2F5B55](https://placehold.co/12x12/2f5b55/2f5b55.png) `#2F5B55`.
 
 On the highlighted current line, code can dip slightly under 4.5:1 and
 comments under 3:1.

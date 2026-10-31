@@ -27,36 +27,36 @@ re-tinting for contrast. tokyonight.nvim day is an inversion of the night
 palette; its blue text at 4.5:1 and red at 3.0:1 would have needed the kind of
 surgery Dossier did on The Greek.
 
-Values taken from the VS Code file: editor background `#E6E7ED`, editor
-foreground `#343B59`, side bar / status bar / terminal background `#D6D8DF`,
-line numbers `#9DA0AB`, comment `#888B94`, keyword `#65359D`, string
-`#385F0D`, function `#2959AA`, number `#965027`, type `#006C86`, and the ANSI
+Values taken from the VS Code file: editor background ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`, editor
+foreground ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59`, side bar / status bar / terminal background ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF`,
+line numbers ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) `#9DA0AB`, comment ![#888B94](https://placehold.co/12x12/888b94/888b94.png) `#888B94`, keyword ![#65359D](https://placehold.co/12x12/65359d/65359d.png) `#65359D`, string
+![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) `#385F0D`, function ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`, number ![#965027](https://placehold.co/12x12/965027/965027.png) `#965027`, type ![#006C86](https://placehold.co/12x12/006c86/006c86.png) `#006C86`, and the ANSI
 set below. Every other hex in this spec is derived from those and the
 derivation is stated where it appears.
 
 ## Palette
 
-Contrast is the WCAG ratio on the window background `#E6E7ED`, with the ratio
-on the terminal pane `#D6D8DF` in the last column.
+Contrast is the WCAG ratio on the window background ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`, with the ratio
+on the terminal pane ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF` in the last column.
 
 | Role | Hex | On window | On pane |
 |------|-----|-----------|---------|
-| Window background | `#E6E7ED` | | |
-| Primary container | `#DEE0E6` | | |
-| Secondary container, terminal pane | `#D6D8DF` | | |
-| Text, ink | `#343B59` | 8.9 | 7.7 |
-| Accent, blue | `#2959AA` | 5.5 | 4.8 |
-| Success, green | `#33635C` | 5.5 | 4.8 |
-| Warning, yellow | `#8F5E15` | 4.5 | 3.9 |
-| Error, red | `#8C4351` | 5.6 | 4.9 |
-| Purple | `#7B43BA` | 5.1 | 4.4 |
-| Cyan | `#006C86` | 4.9 | 4.2 |
-| Muted, ANSI white | `#707280` | 3.9 | 3.3 |
-| Comment | `#888B94` | 2.8 | 2.4 |
-| String, nvim and zsh | `#385F0D` | 6.1 | 5.2 |
-| Number, nvim | `#965027` | 4.9 | 4.2 |
-| Keyword, nvim | `#65359D` | 6.7 | 5.8 |
-| Faint, btop inactive text | `#9DA0AB` | 2.1 | 1.8 |
+| Window background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | | |
+| Primary container | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6` | | |
+| Secondary container, terminal pane | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF` | | |
+| Text, ink | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` | 8.9 | 7.7 |
+| Accent, blue | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` | 5.5 | 4.8 |
+| Success, green | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | 5.5 | 4.8 |
+| Warning, yellow | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` | 4.5 | 3.9 |
+| Error, red | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` | 5.6 | 4.9 |
+| Purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA` | 5.1 | 4.4 |
+| Cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) `#006C86` | 4.9 | 4.2 |
+| Muted, ANSI white | ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280` | 3.9 | 3.3 |
+| Comment | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) `#888B94` | 2.8 | 2.4 |
+| String, nvim and zsh | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) `#385F0D` | 6.1 | 5.2 |
+| Number, nvim | ![#965027](https://placehold.co/12x12/965027/965027.png) `#965027` | 4.9 | 4.2 |
+| Keyword, nvim | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) `#65359D` | 6.7 | 5.8 |
+| Faint, btop inactive text | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) `#9DA0AB` | 2.1 | 1.8 |
 
 Muted and comment sit under 4.5:1 on purpose, as in the dark repo, where
 comment is 2.8:1 and muted 4.1:1. They are never used for text a user has to
@@ -65,7 +65,7 @@ better on the window background. On the pane, yellow, purple, cyan and number
 land between 3.9 and 4.4; this is the same trade Dossier made with its darker
 terminal and is documented in the README the same way.
 
-Primary container `#DEE0E6` is the midpoint between the window background and
+Primary container ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6` is the midpoint between the window background and
 the pane, so COSMIC has its usual two container steps. The terminal pane is
 the VS Code side bar colour and is opaque, carrying over the Dossier lesson
 that the terminal reads better as a solid card a step darker than the desktop.
@@ -77,7 +77,7 @@ same shape Dossier uses (lightest surface at 0, text at 10):
 
 `#DEE0E6 #CDD0D8 #BCBFCA #ABAEBC #9A9EAE #898EA0 #787D91 #676D83 #565C75 #454C67 #343B59`
 
-`neutral_tint` is `neutral_5` `#898EA0`.
+`neutral_tint` is `neutral_5` ![#898EA0](https://placehold.co/12x12/898ea0/898ea0.png) `#898EA0`.
 
 ### Terminal ANSI
 
@@ -89,21 +89,21 @@ so both still read on a light background.
 
 | Slot | Normal | Bright | Dim |
 |------|--------|--------|-----|
-| black | `#343B58` | `#2C324B` | `#757A8E` |
-| red | `#8C4351` | `#773945` | `#AA7F8A` |
-| green | `#33635C` | `#2B544E` | `#749290` |
-| yellow | `#8F5E15` | `#7A5012` | `#AB8F66` |
-| blue | `#2959AA` | `#234C90` | `#6E8CBF` |
-| magenta | `#7B43BA` | `#69399E` | `#9F7FC9` |
-| cyan | `#006C86` | `#005C72` | `#5697AA` |
-| white | `#707280` | `#5F616D` | `#999BA6` |
+| black | ![#343B58](https://placehold.co/12x12/343b58/343b58.png) `#343B58` | ![#2C324B](https://placehold.co/12x12/2c324b/2c324b.png) `#2C324B` | ![#757A8E](https://placehold.co/12x12/757a8e/757a8e.png) `#757A8E` |
+| red | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` | ![#773945](https://placehold.co/12x12/773945/773945.png) `#773945` | ![#AA7F8A](https://placehold.co/12x12/aa7f8a/aa7f8a.png) `#AA7F8A` |
+| green | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | ![#2B544E](https://placehold.co/12x12/2b544e/2b544e.png) `#2B544E` | ![#749290](https://placehold.co/12x12/749290/749290.png) `#749290` |
+| yellow | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` | ![#7A5012](https://placehold.co/12x12/7a5012/7a5012.png) `#7A5012` | ![#AB8F66](https://placehold.co/12x12/ab8f66/ab8f66.png) `#AB8F66` |
+| blue | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` | ![#234C90](https://placehold.co/12x12/234c90/234c90.png) `#234C90` | ![#6E8CBF](https://placehold.co/12x12/6e8cbf/6e8cbf.png) `#6E8CBF` |
+| magenta | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA` | ![#69399E](https://placehold.co/12x12/69399e/69399e.png) `#69399E` | ![#9F7FC9](https://placehold.co/12x12/9f7fc9/9f7fc9.png) `#9F7FC9` |
+| cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) `#006C86` | ![#005C72](https://placehold.co/12x12/005c72/005c72.png) `#005C72` | ![#5697AA](https://placehold.co/12x12/5697aa/5697aa.png) `#5697AA` |
+| white | ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280` | ![#5F616D](https://placehold.co/12x12/5f616d/5f616d.png) `#5F616D` | ![#999BA6](https://placehold.co/12x12/999ba6/999ba6.png) `#999BA6` |
 
-Foreground `#343B59`, background `#D6D8DF`, cursor `#2959AA`, bright
-foreground `#2C324B`, dim foreground `#707280`.
+Foreground ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59`, background ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF`, cursor ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`, bright
+foreground ![#2C324B](https://placehold.co/12x12/2c324b/2c324b.png) `#2C324B`, dim foreground ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280`.
 
 ### Highlight colour
 
-The window hint, terminal cursor and btop highlight use the accent `#2959AA`,
+The window hint, terminal cursor and btop highlight use the accent ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`,
 matching the dark repo where the hint is the accent blue. Dossier switched its
 hint to a neutral grey to follow its Omarchy source; Tokyo Day has no such
 source and keeps the sibling's convention. It is one line in the ron to change.
@@ -147,17 +147,17 @@ except `docs/superpowers/`, which holds this spec and the plan.
 
 | Slot | Hex | Slot | Hex |
 |------|-----|------|-----|
-| bright_red | `#8C4351` | accent_blue | `#2959AA` |
-| bright_green | `#33635C` | accent_indigo | `#65359D` |
-| bright_orange | `#965027` | accent_purple | `#7B43BA` |
-| gray_1 | `#DEE0E6` | accent_pink | `#8C4351` |
-| gray_2 | `#D6D8DF` | accent_red | `#8C4351` |
-| neutral_0..10 | ramp above | accent_orange | `#965027` |
-| ext_warm_grey, accent_warm_grey | `#707280` | accent_yellow | `#8F5E15` |
-| ext_orange | `#965027` | accent_green | `#33635C` |
-| ext_yellow | `#8F5E15` | ext_blue | `#006C86` |
-| ext_purple | `#7B43BA` | ext_pink | `#8C4351` |
-| ext_indigo | `#65359D` | | |
+| bright_red | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` | accent_blue | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` |
+| bright_green | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | accent_indigo | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) `#65359D` |
+| bright_orange | ![#965027](https://placehold.co/12x12/965027/965027.png) `#965027` | accent_purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA` |
+| gray_1 | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6` | accent_pink | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` |
+| gray_2 | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF` | accent_red | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` |
+| neutral_0..10 | ramp above | accent_orange | ![#965027](https://placehold.co/12x12/965027/965027.png) `#965027` |
+| ext_warm_grey, accent_warm_grey | ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280` | accent_yellow | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` |
+| ext_orange | ![#965027](https://placehold.co/12x12/965027/965027.png) `#965027` | accent_green | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` |
+| ext_yellow | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` | ext_blue | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) `#006C86` |
+| ext_purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA` | ext_pink | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` |
+| ext_indigo | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) `#65359D` | | |
 
 Top-level: `bg_color #E6E7ED`, `primary_container_bg #DEE0E6`,
 `secondary_container_bg #D6D8DF`, `text_tint #343B59`, `accent #2959AA`,
@@ -191,7 +191,7 @@ alpha_map: (
 
 This matters because of a libcosmic bug the Dark Gold repo documents: moving
 the frosted glass opacity or thickness sliders in Settings can reset
-`text_tint` to `#FFFFFF`, which on a light theme makes every label
+`text_tint` to ![#FFFFFF](https://placehold.co/12x12/ffffff/ffffff.png) `#FFFFFF`, which on a light theme makes every label
 unreadable. The upstream fix is pop-os/libcosmic pull 1450, not merged. A
 ron with the tint pinned and the frosted block spelled out is the workaround:
 re-importing it restores the tint and the slider positions in one step. The
@@ -210,27 +210,27 @@ and weights are the dark repo's values.
 ### btop, `btop/TokyoDay.theme`
 
 `main_bg` empty (follows the pane), `main_fg` ink, `title` and the four box
-outlines `#2C324B`, `hi_fg` and `proc_misc` blue, `selected_bg` blue with
+outlines ![#2C324B](https://placehold.co/12x12/2c324b/2c324b.png) `#2C324B`, `hi_fg` and `proc_misc` blue, `selected_bg` blue with
 `selected_fg #D6D8DF`, `inactive_fg #9DA0AB`, `div_line #888B94`. Meter
-gradients green `#33635C` to blue `#2959AA` to red `#8C4351`; cached yellow,
+gradients green ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` to blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` to red ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351`; cached yellow,
 available cyan, used red.
 
 ### fastfetch
 
-Logo in ink `#343B59` (the Dossier lesson: big shapes in ink, colour for
-small text). Keys blue `#2959AA`, box titles purple `#7B43BA`, box lines
-`#A5A9B7` (ink blended 70 percent toward the pane), output text ink. The
+Logo in ink ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` (the Dossier lesson: big shapes in ink, colour for
+small text). Keys blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`, box titles purple ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA`, box lines
+![#A5A9B7](https://placehold.co/12x12/a5a9b7/a5a9b7.png) `#A5A9B7` (ink blended 70 percent toward the pane), output text ink. The
 palette dots line shows ink, blue, green, yellow, red, purple, cyan.
 
 ### zsh, `zsh/tokyoday.zsh`
 
 `LS_COLORS`: directories bold blue, symlinks italic cyan, executables bold
 green, archives yellow, images purple, documents ink, broken links red.
-Autosuggest `#9FA2AA`. Syntax highlighting: commands, builtins, aliases,
+Autosuggest ![#9FA2AA](https://placehold.co/12x12/9fa2aa/9fa2aa.png) `#9FA2AA`. Syntax highlighting: commands, builtins, aliases,
 functions blue; precommand green underline; reserved words ink bold; unknown
-tokens red; paths `#2C324B` underline; globbing and history expansion yellow;
-options and separators muted `#707280`; quoted arguments string green
-`#385F0D`; comments `#888B94`. Aliases and the starship block are copied from
+tokens red; paths ![#2C324B](https://placehold.co/12x12/2c324b/2c324b.png) `#2C324B` underline; globbing and history expansion yellow;
+options and separators muted ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280`; quoted arguments string green
+![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) `#385F0D`; comments ![#888B94](https://placehold.co/12x12/888b94/888b94.png) `#888B94`. Aliases and the starship block are copied from
 the dark repo. The repo-local part only; `install.sh` appends one `source`
 line to `~/.zshrc` as the siblings do.
 
@@ -257,10 +257,10 @@ colours 0 to 15 are the normal and bright ANSI sets. The LazyVim spec sets
 
 ### Update script, `scripts/update_system.sh`
 
-Same script, colour block replaced: EDGE ink `#2C324B` for section headers
+Same script, colour block replaced: EDGE ink ![#2C324B](https://placehold.co/12x12/2c324b/2c324b.png) `#2C324B` for section headers
 and the logo rule, CONTROL blue, HIGH green, ACCENT yellow, MUTE muted,
-HIGHER red, DIM comment. Banner gradient runs ink `#343B59` to blue
-`#2959AA` across the 46 columns, following the Dossier change where the
+HIGHER red, DIM comment. Banner gradient runs ink ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` to blue
+![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` across the 46 columns, following the Dossier change where the
 banner is ink-first.
 
 ### Firefox
@@ -268,14 +268,14 @@ banner is ink-first.
 One theme add-on from the main palette, no separate sub-palette (the dark
 repo's Cosmic Night was sampled from its astronaut wallpaper; Day has no such
 wallpaper yet). Manifest name "Cosmic Tokyo Day", a new gecko id, version
-1.0, icons regenerated in blue on `#E6E7ED`. Colour roles map as Dossier's
-manifest does: frame and new tab `#E6E7ED`, toolbar and popups `#DEE0E6`,
-URL field `#ECEDF2` (window background blended 25 percent toward white, the
-field sits above the toolbar), text ink, inactive tab text `#565C75` (neutral_8, 5.4:1 on the frame; muted
+1.0, icons regenerated in blue on ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`. Colour roles map as Dossier's
+manifest does: frame and new tab ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`, toolbar and popups ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6`,
+URL field ![#ECEDF2](https://placehold.co/12x12/ecedf2/ecedf2.png) `#ECEDF2` (window background blended 25 percent toward white, the
+field sits above the toolbar), text ink, inactive tab text ![#565C75](https://placehold.co/12x12/565c75/565c75.png) `#565C75` (neutral_8, 5.4:1 on the frame; muted
 would be 3.9:1, under the README's 4.5:1 promise), accent roles
 (tab line, field focus, highlights, attention icons, loading) blue, icons
-green `#33635C`, button hover `#C9CBD2`, popup border `#969AAA`, sidebar
-border `#B1B3C1`, highlight text `#E6E7ED`. `userChrome.css` and
+green ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C`, button hover ![#C9CBD2](https://placehold.co/12x12/c9cbd2/c9cbd2.png) `#C9CBD2`, popup border ![#969AAA](https://placehold.co/12x12/969aaa/969aaa.png) `#969AAA`, sidebar
+border ![#B1B3C1](https://placehold.co/12x12/b1b3c1/b1b3c1.png) `#B1B3C1`, highlight text ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`. `userChrome.css` and
 `userContent.css` are the Dossier files with the hex values substituted by
 role. Publishing to addons.mozilla.org is a follow-up outside this repo's
 scripts, as it was for the siblings.
@@ -283,16 +283,16 @@ scripts, as it was for the siblings.
 ### Cursors
 
 Four Oxygen variants made with cosmic-darkgold-theme's `cursors/recolour.py`
-from any coloured Tokyo Night variant as base: Blue `#2959AA` (default),
-Purple `#7B43BA`, Green `#33635C`, Ink `#343B59`. Previews rendered on
-`#E6E7ED`; contrast 5.5, 5.1, 5.5 and 8.9. `install.sh`, `uninstall.sh` and
+from any coloured Tokyo Night variant as base: Blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` (default),
+Purple ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA`, Green ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C`, Ink ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59`. Previews rendered on
+![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`; contrast 5.5, 5.1, 5.5 and 8.9. `install.sh`, `uninstall.sh` and
 the README are the dark repo's with names and the variant table replaced.
 
 ### Icons
 
 A `TokyoDay` entry in cosmic-icon-themes `cosmic_icons/palettes.py`:
-`bg #E6E7ED`, `text #343B59`, variants Blue `#2959AA`, Purple `#7B43BA`,
-Green `#33635C`, Ink `{front #343B59, back #565C75, symbol #2959AA,
+`bg #E6E7ED`, `text #343B59`, variants Blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`, Purple ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA`,
+Green ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C`, Ink `{front #343B59, back #565C75, symbol #2959AA,
 accent #2959AA}`, following the TokyoNight Dark variant's shape. Preview
 added to that repo's README. `icons/install.sh` here sets `THEME="TokyoDay"`
 and the four variants and works once a cosmic-icon-themes release carries the
@@ -302,7 +302,7 @@ the implementation plan.
 ### Wallpapers
 
 `backgrounds/` starts with the subjects the light rices share, rendered in
-ink and blue on `#E6E7ED`. The recolours are manual GIMP work with a Tokyo Day
+ink and blue on ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`. The recolours are manual GIMP work with a Tokyo Day
 `.gpl` palette (the same process as the Dossier set); the palette file ships
 in `backgrounds/tokyoday.gpl` so the renders can follow. The first commit may
 ship with the palette and the stripes wallpaper only, and the README wallpaper
@@ -344,7 +344,7 @@ palette `Tokyo-Day`, terminal scheme and syntax theme `Tokyo Day`, icon packs
 ## Verification
 
 - A contrast script (the same WCAG function used to produce the tables here)
-  checks every text role against `#E6E7ED` and `#D6D8DF`; the README table is
+  checks every text role against ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` and ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF`; the README table is
   generated from its output so the numbers cannot drift.
 - `bash -n` on every script, `python3 -m json.tool` on the fastfetch config
   and the Firefox manifest, `nvim --headless` load of the colorscheme.

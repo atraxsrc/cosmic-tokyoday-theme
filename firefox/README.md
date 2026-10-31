@@ -10,16 +10,16 @@ Stylesheets:
 
 | Hex       | Role                      |
 |-----------|---------------------------|
-| `#E6E7ED` | Frame, page chrome        |
-| `#DEE0E6` | Panels, menus             |
-| `#C8D0DF` | Menu hover row (blue tinted into the panel) |
-| `#BAC5DA` | Menu pressed row          |
-| `#B1B3C1` | Separators, menu border   |
-| `#2959AA` | Accent, URL bar border, hover rail, links |
-| `#234C90` | Button hover (deep blue)  |
-| `#33635C` | New tab accent, active    |
-| `#343B59` | Menu text and link hover text (ink) |
-| `#E6E7ED` | Text on blue              |
+| ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | Frame, page chrome        |
+| ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6` | Panels, menus             |
+| ![#C8D0DF](https://placehold.co/12x12/c8d0df/c8d0df.png) `#C8D0DF` | Menu hover row (blue tinted into the panel) |
+| ![#BAC5DA](https://placehold.co/12x12/bac5da/bac5da.png) `#BAC5DA` | Menu pressed row          |
+| ![#B1B3C1](https://placehold.co/12x12/b1b3c1/b1b3c1.png) `#B1B3C1` | Separators, menu border   |
+| ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` | Accent, URL bar border, hover rail, links |
+| ![#234C90](https://placehold.co/12x12/234c90/234c90.png) `#234C90` | Button hover (deep blue)  |
+| ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | New tab accent, active    |
+| ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` | Menu text and link hover text (ink) |
+| ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | Text on blue              |
 
 ## Structure
 
@@ -47,7 +47,7 @@ Two layers, use one or both:
 Same colour keys and roles as DarkGold's Firefox theme and Tokyo Night: icons take the
 calm accent (green here, lime in Tokyo Night, gold in DarkGold), and everything
 "hot" (tab line, pressed button, menu and sidebar selection, loading) takes
-the loud one (blue here, blue in Tokyo Night, coral in DarkGold). Blue `#2959AA`
+the loud one (blue here, blue in Tokyo Night, coral in DarkGold). Blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`
 reads at 5.5:1 on the frame, so it carries every accent role. One extra key, `toolbar_field_border_focus`, pins the
 focused URL bar ring to blue so it does not fall back to the desktop accent
 when `widget.non-native-theme.use-theme-accent` is on (the Firefox default on
@@ -58,17 +58,17 @@ line clear 3:1.
 
 | Hex       | Where in the theme                          |
 |-----------|---------------------------------------------|
-| `#E6E7ED` | Frame, new tab                              |
-| `#DEE0E6` | Toolbar, menus                              |
-| `#ECEDF2` | URL bar field                               |
-| `#E6E7ED` | Text on blue selections                     |
-| `#C9CBD2` | Button hover                                |
-| `#B1B3C1` | Sidebar border                              |
-| `#969AAA` | Menu border                                 |
-| `#343B59` | Body text                                   |
-| `#565C75` | Inactive tab text                           |
-| `#33635C` | Icons                                       |
-| `#2959AA` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
+| ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | Frame, new tab                              |
+| ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6` | Toolbar, menus                              |
+| ![#ECEDF2](https://placehold.co/12x12/ecedf2/ecedf2.png) `#ECEDF2` | URL bar field                               |
+| ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | Text on blue selections                     |
+| ![#C9CBD2](https://placehold.co/12x12/c9cbd2/c9cbd2.png) `#C9CBD2` | Button hover                                |
+| ![#B1B3C1](https://placehold.co/12x12/b1b3c1/b1b3c1.png) `#B1B3C1` | Sidebar border                              |
+| ![#969AAA](https://placehold.co/12x12/969aaa/969aaa.png) `#969AAA` | Menu border                                 |
+| ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` | Body text                                   |
+| ![#565C75](https://placehold.co/12x12/565c75/565c75.png) `#565C75` | Inactive tab text                           |
+| ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | Icons                                       |
+| ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
 
 Build the package:
 
@@ -114,7 +114,7 @@ To undo: delete the two files from the profile's `chrome/` folder and restart.
 - **Never set `--panel-*` or `--arrowpanel-*` on `:root`.** Those variables leak
   into the toolbar and blank the URL bar. They stay on the popup elements.
 - **Context menus do not get an extra element border.** A second stroke made
-  the right-click panel look detached. Hover is a blue-tinted `#C8D0DF` row
+  the right-click panel look detached. Hover is a blue-tinted ![#C8D0DF](https://placehold.co/12x12/c8d0df/c8d0df.png) `#C8D0DF` row
   with a 3px blue rail on the left, not a full ring.
 - **Native menu styling is switched off** (`appearance: none`) on menus and
   menu rows. Without it the COSMIC/GTK hover paints over the colours above.

@@ -6,12 +6,12 @@ rice's icon colours: one per folder colour of the
 [Cosmic-TokyoDay](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Blue**, **Purple**, **Green**, **Ink**.
 All patched so they work in COSMIC's own apps.
 
-| Variant | Preview | Body | Contrast on `#E6E7ED` | Goes with |
+| Variant | Preview | Body | Contrast on ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | Goes with |
 | ------- | ------- | ---- | ------------------- | --------- |
-| **Blue** (default) | ![](../assets/cursors/Oxygen-TokyoDay-Blue.png) | `#2959AA` | 5.5:1 | Blue folders |
-| **Purple** | ![](../assets/cursors/Oxygen-TokyoDay-Purple.png) | `#7B43BA` | 5.1:1 | Purple folders |
-| **Green** | ![](../assets/cursors/Oxygen-TokyoDay-Green.png) | `#33635C` | 5.5:1 | Green folders |
-| **Ink** | ![](../assets/cursors/Oxygen-TokyoDay-Ink.png) | `#343B59` | 8.9:1 | Ink folders |
+| **Blue** (default) | ![](../assets/cursors/Oxygen-TokyoDay-Blue.png) | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` | 5.5:1 | Blue folders |
+| **Purple** | ![](../assets/cursors/Oxygen-TokyoDay-Purple.png) | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA` | 5.1:1 | Purple folders |
+| **Green** | ![](../assets/cursors/Oxygen-TokyoDay-Green.png) | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | 5.5:1 | Green folders |
+| **Ink** | ![](../assets/cursors/Oxygen-TokyoDay-Ink.png) | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` | 8.9:1 | Ink folders |
 
 Each variant is a normal folder here (`Oxygen-TokyoDay-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.

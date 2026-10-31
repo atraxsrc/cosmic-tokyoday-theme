@@ -22,38 +22,38 @@ the dark half is [cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-to
 Tokyo Night Light from the [Tokyo Night VS Code theme](https://github.com/tokyo-night/tokyo-night-vscode-theme),
 the same project the dark half cites. Body text is navy ink, so no role needed
 re-tinting: everything you read as text is 4.5:1 or better on the window
-background `#E6E7ED`. Muted and comment sit low on purpose, as upstream does.
-The terminal is an opaque pane `#D6D8DF`, a step darker than the desktop,
+background ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED`. Muted and comment sit low on purpose, as upstream does.
+The terminal is an opaque pane ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF`, a step darker than the desktop,
 where yellow, purple, cyan and the number colour land between 3.9 and 4.4:1.
 
 | Role | Color | Hex |
 |------|-------|-----|
-| Background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) Lavender grey | `#E6E7ED` |
-| Containers | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) Mist / Pane | `#DEE0E6` / `#D6D8DF` |
-| Terminal | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) Pane, opaque | `#D6D8DF` |
-| Text | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) Ink | `#343B59` |
-| Accent | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) Blue | `#2959AA` |
-| Success | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) Green | `#33635C` |
-| Warning | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) Yellow | `#8F5E15` |
-| Error | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) Red | `#8C4351` |
-| Purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) Violet | `#7B43BA` |
-| Cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) Teal | `#006C86` |
-| String | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) Moss | `#385F0D` |
-| Number | ![#965027](https://placehold.co/12x12/965027/965027.png) Umber | `#965027` |
-| Keyword | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) Grape | `#65359D` |
-| Muted | ![#707280](https://placehold.co/12x12/707280/707280.png) Slate | `#707280` |
-| Comment | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) Grey | `#888B94` |
-| Faint | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) btop inactive text | `#9DA0AB` |
+| Background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) Lavender grey | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` |
+| Containers | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) Mist / Pane | ![#DEE0E6](https://placehold.co/12x12/dee0e6/dee0e6.png) `#DEE0E6` / ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF` |
+| Terminal | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) Pane, opaque | ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF` |
+| Text | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) Ink | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` |
+| Accent | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) Blue | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` |
+| Success | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) Green | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` |
+| Warning | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) Yellow | ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` |
+| Error | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) Red | ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` |
+| Purple | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) Violet | ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA` |
+| Cyan | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) Teal | ![#006C86](https://placehold.co/12x12/006c86/006c86.png) `#006C86` |
+| String | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) Moss | ![#385F0D](https://placehold.co/12x12/385f0d/385f0d.png) `#385F0D` |
+| Number | ![#965027](https://placehold.co/12x12/965027/965027.png) Umber | ![#965027](https://placehold.co/12x12/965027/965027.png) `#965027` |
+| Keyword | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) Grape | ![#65359D](https://placehold.co/12x12/65359d/65359d.png) `#65359D` |
+| Muted | ![#707280](https://placehold.co/12x12/707280/707280.png) Slate | ![#707280](https://placehold.co/12x12/707280/707280.png) `#707280` |
+| Comment | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) Grey | ![#888B94](https://placehold.co/12x12/888b94/888b94.png) `#888B94` |
+| Faint | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) btop inactive text | ![#9DA0AB](https://placehold.co/12x12/9da0ab/9da0ab.png) `#9DA0AB` |
 
-Window hint `#2959AA`. Ratios per role are in `docs/showcase.md`, or run
+Window hint ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`. Ratios per role are in `docs/showcase.md`, or run
 `python3 scripts/contrast.py`.
 
 | Role | Tokyo Day | Tokyo Night |
 |------|-----------|-------------|
-| Background | `#E6E7ED` | `#1A1B26` |
-| Text | `#343B59` | `#C0CAF5` |
-| Accent | `#2959AA` | `#7AA2F7` |
-| Success | `#33635C` | `#9ECE6A` |
+| Background | ![#E6E7ED](https://placehold.co/12x12/e6e7ed/e6e7ed.png) `#E6E7ED` | ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26` |
+| Text | ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` | ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5` |
+| Accent | ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` | ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` |
+| Success | ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` | ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` |
 
 ---
 
@@ -133,18 +133,18 @@ This is a **Light** theme, so it goes in COSMIC's Light slot:
 
 Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/TokyoDay.ron`
 
-Accent is blue `#2959AA`; the window hint border is the same blue, matching
+Accent is blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`; the window hint border is the same blue, matching
 the dark half.
 Use the `+` control if you want a custom swatch.
 
 Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
-0.66 to 0.96, tinted with the palette's middle neutral `#898EA0`, for windows, panel,
+0.66 to 0.96, tinted with the palette's middle neutral ![#898EA0](https://placehold.co/12x12/898ea0/898ea0.png) `#898EA0`, for windows, panel,
 applets and system UI (maximized apps stay solid), and corners are squared
 (`radius_*: 2.0`), the same as the DarkGold baseline. Adjust frosted glass on
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
-reset `text_tint` to `#FFFFFF`, which on a light theme makes every label
+reset `text_tint` to ![#FFFFFF](https://placehold.co/12x12/ffffff/ffffff.png) `#FFFFFF`, which on a light theme makes every label
 unreadable. If your text turns white, re-import `cosmic/TokyoDay.ron`: it
 carries the ink tint and the whole frosted block, so one import restores both.
 Upstream fix proposed in [libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450),
@@ -192,7 +192,7 @@ The desktop `.ron` does not colour ANSI text.
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
 
-Ink text on an opaque pane `#D6D8DF`, a step darker than the desktop; red for
+Ink text on an opaque pane ![#D6D8DF](https://placehold.co/12x12/d6d8df/d6d8df.png) `#D6D8DF`, a step darker than the desktop; red for
 errors, green for strings and success, yellow in its own slot, blue for
 commands and directories, cyan for symlinks, purple for magenta. Bright colours
 are deeper, dim colours lighter, so bold and dim still read on a light
@@ -432,7 +432,7 @@ cp btop/TokyoDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-TokyoDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-four colors: **Blue** `#2959AA` (default), **Purple** `#7B43BA`, **Green** `#33635C` and **Ink** `#343B59` with blue symbols.
+four colors: **Blue** ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` (default), **Purple** ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA`, **Green** ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` and **Ink** ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` with blue symbols.
 
 ![Cosmic-TokyoDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TokyoDay.png)
 
