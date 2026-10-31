@@ -105,7 +105,7 @@ foreground ![#2C324B](https://placehold.co/12x12/2c324b/2c324b.png) `#2C324B`, d
 
 The window hint, terminal cursor and btop highlight use the accent ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`,
 matching the dark repo where the hint is the accent blue. Dossier switched its
-hint to a neutral grey to follow its Omarchy source; Tokyo Day has no such
+hint to a neutral grey to follow its source palette; Tokyo Day has no such
 source and keeps the sibling's convention. It is one line in the ron to change.
 
 ## Repo structure
