@@ -2,6 +2,8 @@
 
 # COSMIC · Tokyo Day
 
+![Tokyo Day palette](assets/palette.png)
+
 Pop!_OS 24.04 on COSMIC in Tokyo Night Light lavender grey, ink and blue: desktop,
 terminal, shell, editor, Firefox, Brave, cursor, wallpapers. The light half of a pair;
 the dark half is [cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-tokyonight-theme).
@@ -116,6 +118,7 @@ Window hint ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`. 
 │   └── install.sh
 ├── assets
 │   ├── cursors/                 # cursor preview
+│   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the car on the bare desktop
 ├── backgrounds/                 # wallpapers, tokyoday-<subject>.png (see Icons and wallpaper)
