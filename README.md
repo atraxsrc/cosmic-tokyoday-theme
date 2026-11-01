@@ -12,6 +12,7 @@ the dark half is [cosmic-tokyonight-theme](https://github.com/atraxsrc/cosmic-to
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-33635c?style=for-the-badge)
 ![Tokyo Day](https://img.shields.io/badge/Theme-Tokyo_Day-e6e7ed?style=for-the-badge&labelColor=2959aa)
 ![Firefox](https://img.shields.io/badge/Firefox-Cosmic_Tokyo_Day-2959aa?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-2959aa?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-707280?style=for-the-badge)
 
 </div>
