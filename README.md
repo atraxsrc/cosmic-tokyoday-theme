@@ -136,7 +136,7 @@ Window hint ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`. 
 │   ├── TokyoDay.conf            # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -522,8 +522,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.tokyoday]` and used by name: the directory in ![#5C5E69](https://placehold.co/12x12/5c5e69/5c5e69.png) `#5C5E69`,
 the branch in ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15`, ![#8F5E15](https://placehold.co/12x12/8f5e15/8f5e15.png) `#8F5E15` for a dirty tree, a ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` prompt
-character that turns ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#8C4351](https://placehold.co/12x12/8c4351/8c4351.png) `#8C4351` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/tokyoday.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
