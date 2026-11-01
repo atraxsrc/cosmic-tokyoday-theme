@@ -1,0 +1,6 @@
+name = "Tokyo Day"
+mode = "light"
+theme = "TokyoDay.ron"
+pair = "tokyonight"
+terminal = "TokyoDay-term.ron"
+btop = "TokyoDay"
