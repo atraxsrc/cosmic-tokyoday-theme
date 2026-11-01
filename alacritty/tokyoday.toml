@@ -1,0 +1,80 @@
+# TokyoDay for Alacritty, part of cosmic-tokyoday-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./alacritty/install.sh puts this in ~/.config/alacritty/themes/,
+# then in ~/.config/alacritty/alacritty.toml:
+#   [general]
+#   import = ["~/.config/alacritty/themes/tokyoday.toml"]
+# (Alacritty 0.13: a top-level `import = [...]` line instead.)
+
+[colors.primary]
+background = "#D6D8DF"
+foreground = "#343B59"
+bright_foreground = "#2C324B"
+dim_foreground = "#707280"
+
+[colors.cursor]
+text = "#D6D8DF"
+cursor = "#2959AA"
+
+[colors.vi_mode_cursor]
+text = "#D6D8DF"
+cursor = "#8F5E15"
+
+[colors.selection]
+text = "CellForeground"
+background = "#B6B9C1"
+
+[colors.search.matches]
+foreground = "#D6D8DF"
+background = "#8F5E15"
+
+[colors.search.focused_match]
+foreground = "#E6E7ED"
+background = "#2959AA"
+
+[colors.hints.start]
+foreground = "#D6D8DF"
+background = "#8F5E15"
+
+[colors.hints.end]
+foreground = "#D6D8DF"
+background = "#8F5E15"
+
+[colors.footer_bar]
+foreground = "#343B59"
+background = "#DEE0E6"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.normal]
+black   = "#343B58"
+red     = "#8C4351"
+green   = "#33635C"
+yellow  = "#8F5E15"
+blue    = "#2959AA"
+magenta = "#7B43BA"
+cyan    = "#006C86"
+white   = "#707280"
+
+[colors.bright]
+black   = "#2C324B"
+red     = "#773945"
+green   = "#2B544E"
+yellow  = "#7A5012"
+blue    = "#234C90"
+magenta = "#69399E"
+cyan    = "#005C72"
+white   = "#5F616D"
+
+[colors.dim]
+black   = "#757A8E"
+red     = "#AA7F8A"
+green   = "#749290"
+yellow  = "#AB8F66"
+blue    = "#6E8CBF"
+magenta = "#9F7FC9"
+cyan    = "#5697AA"
+white   = "#999BA6"

@@ -1,0 +1,243 @@
+/**
+ * @name Cosmic Tokyo Night
+ * @author atraxsrc
+ * @description Tokyo Night (dark) / Tokyo Day (light), the COSMIC rice pair.
+ * @version 1.0.0
+ * @source https://github.com/atraxsrc/cosmic-tokyonight-theme
+ */
+
+/* cosmic-tokyo-night - Discord theme for Vencord / Vesktop (MIT). Only the colour
+ * variables: Discord's layout stays. With Appearance -> Theme -> "Sync with
+ * computer" it follows COSMIC's Dark / Light toggle between the two halves.
+ * The same file ships in both repos.
+ *
+ * Install: ./discord/install.sh copies it to ~/.config/Vencord/themes/ and
+ * ~/.config/vesktop/themes/, then Settings -> Vencord -> Themes -> tick it.
+ * Colours come from the rices' cosmic/*.ron palettes; edit the palette,
+ * not this file. */
+
+.theme-dark, .theme-darker, .theme-midnight {
+  /* Tokyo Night */
+  --background-primary: #1A1B26;
+  --background-secondary: #24283B;
+  --background-secondary-alt: #292E42;
+  --background-tertiary: #1A1B26;
+  --background-accent: #292E42;
+  --background-floating: #24283B;
+  --background-mobile-primary: #1A1B26;
+  --background-mobile-secondary: #24283B;
+  --background-modifier-hover: #24283B99;
+  --background-modifier-active: #292E42;
+  --background-modifier-selected: #292E42;
+  --background-modifier-accent: #4E5576;
+  --background-message-hover: #24283B80;
+  --background-mentioned: #7AA2F720;
+  --background-mentioned-hover: #7AA2F730;
+  --channeltextarea-background: #24283B;
+  --deprecated-card-bg: #24283B;
+  --deprecated-quickswitcher-input-background: #24283B;
+  --input-background: #24283B;
+  --modal-background: #1A1B26;
+  --modal-footer-background: #24283B;
+  --activity-card-background: #24283B;
+
+  /* 2025 layout names */
+  --bg-base-primary: #1A1B26;
+  --bg-base-secondary: #24283B;
+  --bg-base-tertiary: #1A1B26;
+  --bg-surface-raised: #24283B;
+  --bg-surface-overlay: #292E42;
+  --bg-mod-faint: #24283B66;
+  --bg-mod-subtle: #292E4299;
+  --bg-mod-strong: #4E5576;
+  --background-base-low: #1A1B26;
+  --background-base-lower: #1A1B26;
+  --background-base-lowest: #1A1B26;
+  --background-surface-high: #24283B;
+  --background-surface-higher: #292E42;
+  --background-surface-highest: #4E5576;
+  --border-subtle: #4E5576;
+  --border-normal: #646A83;
+  --border-strong: #646A83;
+  --border-faint: #292E42;
+
+  --text-normal: #C0CAF5;
+  --text-muted: #A9B1D6;
+  --text-link: #7AA2F7;
+  --text-link-low-saturation: #7AA2F7;
+  --text-positive: #9ECE6A;
+  --text-warning: #E0AF68;
+  --text-danger: #F7768E;
+  --text-brand: #7AA2F7;
+  --header-primary: #C0CAF5;
+  --header-secondary: #A9B1D6;
+  --interactive-normal: #A9B1D6;
+  --interactive-hover: #C0CAF5;
+  --interactive-active: #C4CFF4;
+  --interactive-muted: #565F89;
+  --channels-default: #A9B1D6;
+  --text-default: #C0CAF5;
+  --text-secondary: #A9B1D6;
+  --text-tertiary: #646A83;
+  --text-strong: #C4CFF4;
+  --text-feedback-positive: #9ECE6A;
+  --text-feedback-warning: #E0AF68;
+  --text-feedback-critical: #F7768E;
+  --text-primary: #C0CAF5;
+
+  --brand-500: #7AA2F7;
+  --brand-560: #7AA2F7;
+  --brand-600: #F93356;
+  --brand-experiment: #7AA2F7;
+  --brand-experiment-560: #7AA2F7;
+  --brand-experiment-600: #F93356;
+  --control-brand-foreground: #7AA2F7;
+  --control-brand-foreground-new: #7AA2F7;
+  --mention-foreground: #7AA2F7;
+  --mention-background: #7AA2F720;
+  --status-positive: #9ECE6A;
+  --status-positive-background: #9ECE6A;
+  --status-positive-text: #1A1B26;
+  --status-warning: #E0AF68;
+  --status-warning-background: #E0AF68;
+  --status-warning-text: #1A1B26;
+  --status-danger: #F7768E;
+  --status-danger-background: #F7768E;
+  --status-danger-text: #1A1B26;
+  --info-positive-foreground: #9ECE6A;
+  --info-warning-foreground: #E0AF68;
+  --info-danger-foreground: #F7768E;
+  --button-positive-background: #9ECE6A;
+  --button-positive-background-hover: #A3D7A3;
+  --button-danger-background: #F7768E;
+  --button-danger-background-hover: #F7768E;
+  --button-secondary-background: #292E42;
+  --button-secondary-background-hover: #4E5576;
+  --button-secondary-background-active: #646A83;
+  --button-outline-brand-border: #7AA2F7;
+  --button-outline-brand-text: #7AA2F7;
+
+  --scrollbar-auto-thumb: #646A83;
+  --scrollbar-auto-track: #1A1B26;
+  --scrollbar-thin-thumb: #646A83;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #646A83;
+  --scrollbar-auto-scrollbar-color-track: #1A1B26;
+  --focus-primary: #7AA2F7;
+  --spoiler-background: #292E42;
+  --spoiler-hover-background: #4E5576;
+  --text-code: #9ECE6A;
+}
+
+.theme-light {
+  /* Tokyo Day */
+  --background-primary: #E6E7ED;
+  --background-secondary: #DEE0E6;
+  --background-secondary-alt: #D6D8DF;
+  --background-tertiary: #C5C7CD;
+  --background-accent: #D6D8DF;
+  --background-floating: #DEE0E6;
+  --background-mobile-primary: #E6E7ED;
+  --background-mobile-secondary: #DEE0E6;
+  --background-modifier-hover: #DEE0E699;
+  --background-modifier-active: #D6D8DF;
+  --background-modifier-selected: #D6D8DF;
+  --background-modifier-accent: #B6B9C1;
+  --background-message-hover: #DEE0E680;
+  --background-mentioned: #2959AA20;
+  --background-mentioned-hover: #2959AA30;
+  --channeltextarea-background: #DEE0E6;
+  --deprecated-card-bg: #DEE0E6;
+  --deprecated-quickswitcher-input-background: #DEE0E6;
+  --input-background: #DEE0E6;
+  --modal-background: #E6E7ED;
+  --modal-footer-background: #DEE0E6;
+  --activity-card-background: #DEE0E6;
+
+  /* 2025 layout names */
+  --bg-base-primary: #E6E7ED;
+  --bg-base-secondary: #DEE0E6;
+  --bg-base-tertiary: #C5C7CD;
+  --bg-surface-raised: #DEE0E6;
+  --bg-surface-overlay: #D6D8DF;
+  --bg-mod-faint: #DEE0E666;
+  --bg-mod-subtle: #D6D8DF99;
+  --bg-mod-strong: #B6B9C1;
+  --background-base-low: #E6E7ED;
+  --background-base-lower: #C5C7CD;
+  --background-base-lowest: #C5C7CD;
+  --background-surface-high: #DEE0E6;
+  --background-surface-higher: #D6D8DF;
+  --background-surface-highest: #B6B9C1;
+  --border-subtle: #B6B9C1;
+  --border-normal: #B6B9C1;
+  --border-strong: #707280;
+  --border-faint: #D6D8DF;
+
+  --text-normal: #343B59;
+  --text-muted: #5C5E69;
+  --text-link: #2959AA;
+  --text-link-low-saturation: #2959AA;
+  --text-positive: #33635C;
+  --text-warning: #8F5E15;
+  --text-danger: #8C4351;
+  --text-brand: #2959AA;
+  --header-primary: #343B59;
+  --header-secondary: #5C5E69;
+  --interactive-normal: #5C5E69;
+  --interactive-hover: #343B59;
+  --interactive-active: #2C324B;
+  --interactive-muted: #888B94;
+  --channels-default: #5C5E69;
+  --text-default: #343B59;
+  --text-secondary: #5C5E69;
+  --text-tertiary: #707280;
+  --text-strong: #2C324B;
+  --text-feedback-positive: #33635C;
+  --text-feedback-warning: #8F5E15;
+  --text-feedback-critical: #8C4351;
+  --text-primary: #343B59;
+
+  --brand-500: #2959AA;
+  --brand-560: #2959AA;
+  --brand-600: #773945;
+  --brand-experiment: #2959AA;
+  --brand-experiment-560: #2959AA;
+  --brand-experiment-600: #773945;
+  --control-brand-foreground: #2959AA;
+  --control-brand-foreground-new: #2959AA;
+  --mention-foreground: #2959AA;
+  --mention-background: #2959AA20;
+  --status-positive: #33635C;
+  --status-positive-background: #33635C;
+  --status-positive-text: #E6E7ED;
+  --status-warning: #8F5E15;
+  --status-warning-background: #8F5E15;
+  --status-warning-text: #E6E7ED;
+  --status-danger: #8C4351;
+  --status-danger-background: #8C4351;
+  --status-danger-text: #E6E7ED;
+  --info-positive-foreground: #33635C;
+  --info-warning-foreground: #8F5E15;
+  --info-danger-foreground: #8C4351;
+  --button-positive-background: #33635C;
+  --button-positive-background-hover: #33635C;
+  --button-danger-background: #8C4351;
+  --button-danger-background-hover: #8C4351;
+  --button-secondary-background: #D6D8DF;
+  --button-secondary-background-hover: #B6B9C1;
+  --button-secondary-background-active: #B6B9C1;
+  --button-outline-brand-border: #2959AA;
+  --button-outline-brand-text: #2959AA;
+
+  --scrollbar-auto-thumb: #B6B9C1;
+  --scrollbar-auto-track: #E6E7ED;
+  --scrollbar-thin-thumb: #B6B9C1;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #B6B9C1;
+  --scrollbar-auto-scrollbar-color-track: #E6E7ED;
+  --focus-primary: #2959AA;
+  --spoiler-background: #D6D8DF;
+  --spoiler-hover-background: #B6B9C1;
+  --text-code: #385F0D;
+}

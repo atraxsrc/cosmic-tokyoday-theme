@@ -1,0 +1,45 @@
+# TokyoDay for Ghostty, part of cosmic-tokyoday-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = TokyoDay
+# or, with the Tokyo Night half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:TokyoNight,light:TokyoDay
+
+background = #D6D8DF
+foreground = #343B59
+
+cursor-color = #2959AA
+cursor-text = #D6D8DF
+
+selection-background = #B6B9C1
+selection-foreground = #343B59
+
+split-divider-color = #B6B9C1
+unfocused-split-fill = #D6D8DF
+
+# black
+palette = 0=#343B58
+palette = 8=#2C324B
+# red
+palette = 1=#8C4351
+palette = 9=#773945
+# green
+palette = 2=#33635C
+palette = 10=#2B544E
+# yellow
+palette = 3=#8F5E15
+palette = 11=#7A5012
+# blue
+palette = 4=#2959AA
+palette = 12=#234C90
+# magenta
+palette = 5=#7B43BA
+palette = 13=#69399E
+# cyan
+palette = 6=#006C86
+palette = 14=#005C72
+# white
+palette = 7=#707280
+palette = 15=#5F616D
