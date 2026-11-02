@@ -43,7 +43,7 @@ flowchart LR
 - [x] `./icons/install.sh` for the **Cosmic-TokyoDay** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-TokyoDay-Blue
-- [x] Wallpaper: `backgrounds/tokyoday-car.png`
+- [x] Wallpaper: `backgrounds/tokyoday-anime.png`
 - [x] Screenshot for the README
 
 ## The baseline every rice shares
