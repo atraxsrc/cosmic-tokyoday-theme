@@ -128,6 +128,8 @@ Window hint ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`. 
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── notesnook
+│   └── cosmic-tokyoday.json     # Notesnook theme, Tokyo Day (light)
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── obsidian
 │   ├── cosmic-tokyo-night.css   # CSS snippet, Tokyo Night (dark) + Tokyo Day (light)
@@ -416,6 +418,22 @@ in ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`. The same 
 
 It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
 vault, so run it once per vault.
+
+---
+
+## Notesnook
+
+`notesnook/cosmic-tokyoday.json` is a [Notesnook](https://notesnook.com/) theme for Tokyo Day,
+built from the same palette as the Obsidian snippet: window, list and sidebar
+backgrounds, text, accent, selection and the error / success colours. A
+Notesnook theme holds one colour scheme, so the Tokyo Night half ships as
+`notesnook/cosmic-tokyonight.json` in cosmic-tokyonight-theme; load both if you switch between
+dark and light.
+
+```text
+Notesnook → Settings → Appearance → Themes → Load from file
+→ pick notesnook/cosmic-tokyoday.json → Set as default
+```
 
 ---
 
