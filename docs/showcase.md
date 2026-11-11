@@ -58,7 +58,7 @@ frosted_windows: true,
 frosted_panel: true,
 frosted_applets: true,
 frosted_maximized_apps: false,
-gaps: (0, 7),
+gaps: (0, 4),
 active_hint: 1,
 ```
 

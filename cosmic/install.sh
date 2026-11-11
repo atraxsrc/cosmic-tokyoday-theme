@@ -18,6 +18,6 @@ done
 
 cat <<'EOF'
 
-Done. Needs the Maple fonts and Cosmic-TokyoDay icons (./icons/install.sh) installed, and the Tokyo Day terminal scheme
+Done. Needs the fonts (./fonts/install.sh) and Cosmic-TokyoDay icons (./icons/install.sh) installed, and the Tokyo Day terminal scheme
 imported, or COSMIC falls back to its defaults.
 EOF
