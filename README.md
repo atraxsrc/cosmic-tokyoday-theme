@@ -223,7 +223,7 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal`, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-TokyoDay-Blue |
+| Icons | Cosmic-TokyoDay-Ink |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), opaque, no header bar, Tokyo Day (light scheme) |
 
@@ -709,13 +709,13 @@ cp btop/TokyoDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-TokyoDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-four colors: **Blue** ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA` (default), **Purple** ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA`, **Green** ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` and **Ink** ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` with blue symbols.
+four colors: **Blue** ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`, **Purple** ![#7B43BA](https://placehold.co/12x12/7b43ba/7b43ba.png) `#7B43BA`, **Green** ![#33635C](https://placehold.co/12x12/33635c/33635c.png) `#33635C` and **Ink** ![#343B59](https://placehold.co/12x12/343b59/343b59.png) `#343B59` (default) with blue symbols.
 
 ![Cosmic-TokyoDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TokyoDay.png)
 
 ```bash
-./icons/install.sh                  # Blue folders
-./icons/install.sh --variant Purple # or Green, Ink
+./icons/install.sh                 # Ink folders
+./icons/install.sh --variant Blue  # or Purple, Green
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
