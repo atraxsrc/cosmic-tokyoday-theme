@@ -180,6 +180,17 @@ This is a **Light** theme, so it goes in COSMIC's Light slot:
 
 Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/TokyoDay.ron`
 
+Or from a terminal in this folder, which takes the whole file:
+
+```bash
+cosmic-settings appearance import cosmic/TokyoDay.ron
+```
+
+Since the COSMIC builds after 1.11.0 the **Import** button keeps your current
+frosted glass (level, on/off per surface, opacity), gaps and active hint, and
+takes only the colours, corners, fonts and icons from the file. The terminal
+command applies this rice's frosted glass too, and so does `themebox flip`.
+
 Accent is blue ![#2959AA](https://placehold.co/12x12/2959aa/2959aa.png) `#2959AA`; the window hint border is the same blue, matching
 the dark half.
 Use the `+` control if you want a custom swatch.
@@ -188,7 +199,7 @@ Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
 0.66 to 0.96, tinted with the palette's middle neutral ![#898EA0](https://placehold.co/12x12/898ea0/898ea0.png) `#898EA0`, for windows, panel,
 applets and system UI (maximized apps stay solid), and corners are squared
 (`radius_*: 2.0`), the same as the DarkGold baseline. Adjust frosted glass on
-Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
+Appearance → Style → Frosted glass after import; the Import button keeps those sliders.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
 reset `text_tint` to ![#FFFFFF](https://placehold.co/12x12/ffffff/ffffff.png) `#FFFFFF`, which on a light theme makes every label
